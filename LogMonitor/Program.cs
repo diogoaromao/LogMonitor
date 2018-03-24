@@ -28,8 +28,8 @@ namespace LogMonitor
 
             if (args.Length > thresholdIndex)
             {
-                int threshold;
-                if (!Int32.TryParse(args[thresholdIndex + 1], out threshold) && thresholdIndex != -1)
+                double threshold = -1;
+                if (!Double.TryParse(args[thresholdIndex + 1], out threshold) && thresholdIndex != -1)
                 {
                     Console.WriteLine("Threshold value is not a valid number");
                     return;
@@ -47,8 +47,8 @@ namespace LogMonitor
                 var basePath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
                 var examplesPath = Path.Combine(basePath, EXAMPLES_FOLDER);
 
-                Console.WriteLine("Log Monitoring Started...");
-                var logParser = new LogParser();
+                Console.WriteLine($"Log Monitoring Started at {DateTime.Now}");
+                var logParser = new LogParser(threshold);
                 logParser.Parse(files);
             }
         }

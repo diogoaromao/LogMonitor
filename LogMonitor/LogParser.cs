@@ -16,9 +16,20 @@ namespace LogMonitor
         private ConcurrentDictionary<string, int> hits = new ConcurrentDictionary<string, int>();
         private ConcurrentDictionary<string, List<string>> sections = new ConcurrentDictionary<string, List<string>>();
 
+        private int nrHits;
+        private double average;
+        private double sum = 0;
+
+        private double _threshold;
+
         private List<string> mostHits = new List<string>();
 
         private readonly Object obj = new Object();
+
+        public LogParser(double threshold)
+        {
+            _threshold = threshold;
+        }
 
         private void onTimedEvent(object source, ElapsedEventArgs e)
         {
@@ -27,12 +38,32 @@ namespace LogMonitor
             hits.Clear();
         }
 
+        private void onAlertTimedEvent(object source, ElapsedEventArgs e)
+        {
+            lock(obj)
+            {
+                average = sum / nrHits;
+                if (average > _threshold)
+                    printAlert();
+
+                average = sum = nrHits = 0;
+            }
+        }
+
         public void Parse(IEnumerable<string> files)
         {
             System.Timers.Timer timer = new System.Timers.Timer();
             timer.Elapsed += new ElapsedEventHandler(onTimedEvent);
             timer.Interval = 60000;
             timer.Enabled = true;
+
+            if(_threshold > -1)
+            {
+                System.Timers.Timer alertTimer = new System.Timers.Timer();
+                alertTimer.Elapsed += new ElapsedEventHandler(onAlertTimedEvent);
+                alertTimer.Interval = 120000;
+                alertTimer.Enabled = true;
+            }
 
             while (true)
             {
@@ -74,6 +105,12 @@ namespace LogMonitor
                     });
 
                     hits.AddOrUpdate(webSite, 1, (id, count) => count + 1);
+
+                    long bytes;
+                    if (args.Length > 8 && Int64.TryParse(args[9], out bytes))
+                        sum += bytes;
+
+                    nrHits++;
                 }
             }
         }
@@ -113,6 +150,12 @@ namespace LogMonitor
                     Console.WriteLine($"{section}");
                 }
             }
+        }
+
+        private void printAlert()
+        {
+            Console.WriteLine($"High traffic generated an alert - hits = {nrHits}, triggered at {DateTime.Now}");
+            Console.WriteLine($"Threshold = {_threshold}, Average = {average}B");
         }
 
         private void getTopHits()
