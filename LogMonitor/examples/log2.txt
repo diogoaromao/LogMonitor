@@ -1,0 +1,9 @@
+crl12.crl.com - - [28/Aug/1995:00:01:40 -0400] "GET http://www.google.com/atomicbk/images/atomgirl.jpg HTTP/1.0" 200 34164
+world.std.com - - [28/Aug/1995:00:00:38 -0400] "GET http://www.google.com/pub/atomicbk/catalog/logo2.gif HTTP/1.0" 200 12871
+3.bank2.dialup.ctenet.com - - [28/Aug/1995:00:02:11 -0400] "GET http://www.facebook.com/pub/atomicbk/catalog/new.gif HTTP/1.0" 200 744
+sl4.ndts1.dsu.NoDak.edu - - [28/Aug/1995:00:01:50 -0400] "GET http://www.google.com/pub/atomicbk/catalog/new.gif HTTP/1.0" 200 744
+er6.rutgers.edu - - [28/Aug/1995:00:00:37 -0400] "GET http://www.quora.com/pub/rjgula/network.htm HTTP/1.0" 200 2017
+cssu24.cs.ust.hk - - [28/Aug/1995:00:00:39 -0400] "GET http://www.datadog.com/pub/job/vk/view18.jpg HTTP/1.0" 200 6578
+debasement.clark.net - - [28/Aug/1995:00:01:52 -0400] "GET http://www.facebook.com/pub/tblake/www/aacc.gif HTTP/1.0" 304 -
+crl12.crl.com - - [28/Aug/1995:00:01:28 -0400] "GET http://www.quora.com/pub/atomicbk/seanc.gif HTTP/1.0" 200 734
+3.bank2.dialup.ctenet.com - - [28/Aug/1995:00:02:50 -0400] "GET http://www.facebook.com/atomicbk/catalog/new.gif HTTP/1.0" 200 744

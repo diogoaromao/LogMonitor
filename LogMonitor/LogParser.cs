@@ -5,7 +5,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
+using System.Timers;
 
 namespace LogMonitor
 {
@@ -14,22 +14,33 @@ namespace LogMonitor
         private const string EXAMPLES_FOLDER = "examples";
 
         private ConcurrentDictionary<string, int> hits = new ConcurrentDictionary<string, int>();
+        private ConcurrentDictionary<string, List<string>> sections = new ConcurrentDictionary<string, List<string>>();
+
+        private List<string> mostHits = new List<string>();
+
+        private readonly Object obj = new Object();
+
+        private void onTimedEvent(object source, ElapsedEventArgs e)
+        {
+            getTopHits();
+            mostHits.Clear();
+            hits.Clear();
+        }
 
         public void Parse(IEnumerable<string> files)
         {
-            var tasks = new List<Task>();
+            System.Timers.Timer timer = new System.Timers.Timer();
+            timer.Elapsed += new ElapsedEventHandler(onTimedEvent);
+            timer.Interval = 60000;
+            timer.Enabled = true;
 
             while (true)
             {
                 foreach (var file in files)
                 {
-                    tasks.Add(Task.Factory.StartNew(() => parseLines(readFile(file))));
+                    Thread thread = new Thread(() => parseLines(readFile(file)));
+                    thread.Start();
                 }
-
-                Thread.Sleep(10000);
-
-                printTopHits(getTopHits());
-                hits.Clear();
             }
         }
 
@@ -37,7 +48,33 @@ namespace LogMonitor
         {
             foreach (var line in lines)
             {
-                hits.AddOrUpdate(line, 1, (id, count) => count + 1);
+                var args = line.Split(' ');
+
+                if (args.Length < 6)
+                    continue;
+
+                var url = args[6];
+                var urlArgs = url.Split(new[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
+
+                if (urlArgs.Length < 3)
+                    continue;
+
+                var webSite = string.Concat(urlArgs[0], "//", urlArgs[1]);
+                var section = string.Concat(webSite, "/", urlArgs[2]);
+
+                lock (obj)
+                {
+                    sections.AddOrUpdate(webSite, new List<string> { section }, (site, sections) =>
+                    {
+                        if (sections.Contains(section))
+                            return sections;
+
+                        sections.Add(section);
+                        return sections;
+                    });
+
+                    hits.AddOrUpdate(webSite, 1, (id, count) => count + 1);
+                }
             }
         }
 
@@ -61,18 +98,35 @@ namespace LogMonitor
             }
         }
 
-        private void printTopHits(IEnumerable<string> topHits)
+        private void printTopHits()
         {
-            Console.WriteLine($"Top Hits Last 10 Seconds:");
-            foreach (var topHit in topHits)
-                Console.WriteLine($"{topHit}");
+            Console.WriteLine($"Logged at: {DateTime.Now}");
+            Console.WriteLine($"Top Hits Last 60 Seconds:");
+            foreach (var topHit in mostHits)
+            {
+                Console.WriteLine("WebSite:");
+                Console.WriteLine($"{topHit} with {hits[topHit]} hits");
+
+                foreach (var section in sections[topHit])
+                {
+                    Console.WriteLine("Sections:");
+                    Console.WriteLine($"{section}");
+                }
+            }
         }
 
-        private IEnumerable<string> getTopHits()
+        private void getTopHits()
         {
-            var maxValue = hits.Aggregate((h1, h2) => h1.Value > h2.Value ? h1 : h2).Value;
-            return hits.Where(pair => pair.Value == maxValue)
-                                .Select(pair => pair.Key);
+            lock (obj)
+            {
+                var maxValue = hits.Aggregate((h1, h2) => h1.Value > h2.Value ? h1 : h2).Value;
+                var keys = hits.Where(pair => pair.Value == maxValue)
+                                    .Select(pair => pair.Key);
+
+                mostHits.AddRange(keys);
+
+                printTopHits();
+            }
         }
     }
 }
