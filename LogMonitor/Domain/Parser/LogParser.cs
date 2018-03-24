@@ -8,8 +8,21 @@ using System.Text;
 namespace LogMonitor.Domain.Parser
 {
     public class LogParser
-    { 
-        public LogParser(){ }
+    {
+        private static LogParser _instance;
+
+        private LogParser(){ }
+
+        public static LogParser Instance
+        {
+            get
+            {
+                if (_instance == null)
+                    _instance = new LogParser();
+
+                return _instance;
+            }
+        }
 
         public IEnumerable<LineDTO> ParseContent(string file)
         {

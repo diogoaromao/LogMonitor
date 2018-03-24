@@ -49,6 +49,10 @@
     <Compile Include="Domain\Notification\Status.cs" />
     <Compile Include="Domain\Parser\LogParser.cs" />
     <Compile Include="Domain\Notification\Notification.cs" />
+    <Compile Include="Domain\Timer\AlertTimerMonitor.cs" />
+    <Compile Include="Domain\Timer\Interfaces\ITimerMonitor.cs" />
+    <Compile Include="Domain\Timer\StatusTimerMonitor.cs" />
+    <Compile Include="Domain\Timer\TimerMonitor.cs" />
     <Compile Include="Utils\Constants.cs" />
     <Compile Include="Utils\InputValidation.cs" />
     <Compile Include="Program.cs" />
