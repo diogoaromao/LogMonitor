@@ -36,3 +36,4 @@ To be done...
 5. Possibility to write the resulting log to a supplied path instead of only to the results folder.
 6. Should be possible to generate a log file without the need to specify the threshold.
 7. Code refactor
+8. Use dependency injection
