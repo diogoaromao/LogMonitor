@@ -22,7 +22,7 @@ Create a simple console program that monitors HTTP traffic on your machine:
 1. Open Visual Studio and Build code on Release Mode
 2. Open a Windows Powershell and navigate to the project bin\Release folder
 ```
-.\LogMonitor.exe -t 1000 -f generated.exe
+.\LogMonitor.exe -t 1000 -f generated.txt
 ```
 
 ## Running tests ##
