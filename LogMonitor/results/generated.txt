@@ -1,40 +1,38 @@
-[20:52:55]: Log Monitoring Started.
-[20:53:25]: No logs detected for the past 30 seconds.
-[20:53:55]: Websites visited since monitoring started:
-http://www.quora.com - 1 time(s)
-[20:53:55]: Most visited websites since last check:
-Website: http://www.quora.com
+[20:59:28]: Log Monitoring Started.
+[20:59:58]: No logs detected for the past 30 seconds.
+[21:00:28]: Websites visited since monitoring started:
+http://www.google.com - 1 time(s)
+[21:00:28]: Most visited websites since last check:
+Website: http://www.google.com
 Sections:
-http://www.quora.com/pub
-[20:54:25]: Most visited websites since last check:
+http://www.google.com/pub
+[21:00:58]: Most visited websites since last check:
 Website: http://www.facebook.com
 Sections:
 http://www.facebook.com/pub
-[20:54:55]: Websites visited since monitoring started:
-http://www.facebook.com - 13 time(s)
-http://www.quora.com - 9 time(s)
-http://www.datadog.com - 5 time(s)
-http://www.google.com - 4 time(s)
-[20:54:55]: Most visited websites since last check:
-Website: http://www.facebook.com
-Sections:
-http://www.facebook.com/pub
-Website: http://www.quora.com
-Sections:
-http://www.quora.com/pub
-[20:54:55]: High traffic generated an alert - hits = 31, triggered at 25/03/2018 20:54:55.
-[20:54:55]: Threshold = 1000, Average = 1513,67741935484 bytes.
-[20:55:25]: Most visited websites since last check:
+[21:01:28]: Most visited websites since last check:
 Website: http://www.datadog.com
 Sections:
 http://www.datadog.com/pub
-[20:55:55]: Websites visited since monitoring started:
-http://www.facebook.com - 18 time(s)
-http://www.quora.com - 13 time(s)
-http://www.datadog.com - 13 time(s)
-http://www.google.com - 6 time(s)
-[20:55:55]: Most visited websites since last check:
-Website: http://www.quora.com
+[21:01:28]: Websites visited since monitoring started:
+http://www.facebook.com - 10 time(s)
+http://www.google.com - 7 time(s)
+http://www.datadog.com - 7 time(s)
+http://www.quora.com - 7 time(s)
+[21:01:28]: High traffic generated an alert - hits = 31, triggered at 25/03/2018 21:01:28.
+[21:01:28]: Threshold = 100, Average = 1527,09677419355 bytes.
+[21:01:58]: Most visited websites since last check:
+Website: http://www.facebook.com
 Sections:
-http://www.quora.com/pub
-[20:56:25]: No logs detected for the past 30 seconds.
+http://www.facebook.com/pub
+[21:02:28]: Websites visited since monitoring started:
+http://www.facebook.com - 20 time(s)
+http://www.quora.com - 11 time(s)
+http://www.google.com - 10 time(s)
+http://www.datadog.com - 9 time(s)
+[21:02:28]: Most visited websites since last check:
+Website: http://www.facebook.com
+Sections:
+http://www.facebook.com/pub
+[21:02:58]: No logs detected for the past 30 seconds.
+[21:03:28]: High traffic generated an alert - hits = 19, triggered at 25/03/2018 21:03:28.

@@ -4,6 +4,7 @@ using LogMonitor.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Utils;
 
 namespace LogMonitor.Domain.Timer
 {
@@ -15,7 +16,10 @@ namespace LogMonitor.Domain.Timer
         {
             if (!_pageHits.Any())
             {
-                _printer.Print($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: No websites have been visited");
+                lock (GlobalLocks.WriteLock)
+                {
+                    _printer.Print($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: No websites have been visited");
+                }
                 return;
             }
 
