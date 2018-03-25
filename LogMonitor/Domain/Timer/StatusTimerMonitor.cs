@@ -1,26 +1,27 @@
-﻿using LogMonitor.Domain.Notification;
-using LogMonitor.Domain.Notification.Interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 
 namespace LogMonitor.Domain.Timer
 {
-    public class StatusTimerMonitor : TimerMonitor
+    public abstract class StatusTimerMonitor : TimerMonitor
     {
-        private Dictionary<string, int> _pageHits;
-        private Dictionary<string, List<string>> _sections;
+        protected Dictionary<string, int> _pageHits;
+        protected Dictionary<string, List<string>> _sections;
+        protected bool _isCumulative;
 
-        public StatusTimerMonitor(long time, string file) : base(time, file)
+        public StatusTimerMonitor(long time, string file, bool isCumulative) : base(time, file)
         {
             _pageHits = new Dictionary<string, int>();
             _sections = new Dictionary<string, List<string>>();
+            _isCumulative = isCumulative;
         }
 
         protected override void parseContent(string file)
         {
-            _sections.Clear();
-            _pageHits.Clear();
+            if (!_isCumulative)
+            {
+                _sections.Clear();
+                _pageHits.Clear();
+            }
 
             var lines = _logParser.ParseContent(file);
             foreach (var line in lines)
@@ -64,29 +65,9 @@ namespace LogMonitor.Domain.Timer
                 }
             }
 
-            getTopHits();
+            printTopHits();
         }
 
-        private void getTopHits()
-        {
-            if (!_pageHits.Any())
-            {
-                Console.WriteLine($"No logs detected for the past {_time / 1000} seconds at {DateTime.Now}");
-                return;
-            }
-
-            var maxValue = _pageHits.Aggregate((h1, h2) => h1.Value > h2.Value ? h1 : h2).Value;
-            List<string> keys = _pageHits.Where(pair => pair.Value == maxValue)
-                                .Select(pair => pair.Key)
-                                .ToList();
-
-            var mostVisited = _pageHits.Where(item => keys.Contains(item.Key))
-                                .Select(pair => pair.Key)
-                                .ToList();
-
-            var mostVisitedSections = _sections.Where(item => mostVisited.Contains(item.Key));
-            INotification notification = new Status(mostVisitedSections);
-            printNotification(notification);
-        }
+        protected abstract void printTopHits();
     }
 }

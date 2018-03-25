@@ -15,8 +15,10 @@ namespace LogMonitor.Domain
 
         public void Monitor()
         {
-            new StatusTimerMonitor(30000, _file);
-            new AlertTimerMonitor(60000, _file, _threshold);
+
+            new PeriodicTimerMonitor(30000, _file);
+            new CumulativeTimerMonitor(60000, _file);
+            new AlertTimerMonitor(120000, _file, _threshold);
 
             while (true)
             {

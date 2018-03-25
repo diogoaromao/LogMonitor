@@ -57,7 +57,7 @@ namespace LogMonitor.Utils
                 }
                 else
                 {
-                    Console.WriteLine(string.Format(Constants.LOG_MONITORING_STARTED, DateTime.Now));
+                    Console.WriteLine(string.Format(Constants.LOG_MONITORING_STARTED, DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)));
 
                     var logMonitor = new Domain.LogMonitor(file, threshold);
                     logMonitor.Monitor();

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LogMonitor.Utils;
+using System;
+using Utils;
 
 namespace LogMonitor.Domain.Notification
 {
@@ -13,7 +15,10 @@ namespace LogMonitor.Domain.Notification
 
         public override void Notify()
         {
-            Console.WriteLine($"Recovered from alert triggered at {_recoveredAt} at {DateTime.Now}");
+            lock (GlobalLocks.WriteLock)
+            {
+                Console.WriteLine($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: Recovered from alert triggered at {_recoveredAt}.");
+            }
         }
     }
 }

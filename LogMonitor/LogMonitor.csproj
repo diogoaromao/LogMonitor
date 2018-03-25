@@ -47,10 +47,14 @@
     <Compile Include="Domain\Notification\Recovery.cs" />
     <Compile Include="Domain\Notification\Alert.cs" />
     <Compile Include="Domain\Notification\Interfaces\INotification.cs" />
+    <Compile Include="Domain\Notification\CumulativeStatus.cs" />
+    <Compile Include="Domain\Notification\PeriodicStatus.cs" />
     <Compile Include="Domain\Notification\Status.cs" />
     <Compile Include="Domain\Parser\LogParser.cs" />
     <Compile Include="Domain\Notification\Notification.cs" />
     <Compile Include="Domain\Timer\AlertTimerMonitor.cs" />
+    <Compile Include="Domain\Timer\PeriodicTimerMonitor.cs" />
+    <Compile Include="Domain\Timer\CumulativeTimerMonitor.cs" />
     <Compile Include="Domain\Timer\StatusTimerMonitor.cs" />
     <Compile Include="Domain\Timer\TimerMonitor.cs" />
     <Compile Include="Utils\InputValidation.cs" />

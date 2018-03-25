@@ -2,7 +2,6 @@
 using LogMonitor.Domain.Notification.Interfaces;
 using LogMonitor.Domain.Parser;
 using System;
-using System.Collections.Generic;
 using System.Timers;
 
 namespace LogMonitor.Domain.Timer

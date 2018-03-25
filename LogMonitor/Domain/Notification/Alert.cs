@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LogMonitor.Utils;
+using System;
+using Utils;
 
 namespace LogMonitor.Domain.Notification
 {
@@ -19,8 +21,11 @@ namespace LogMonitor.Domain.Notification
 
         public override void Notify()
         {
-            Console.WriteLine($"High traffic generated an alert - hits = {_hits}, triggered at {_raisedAt}");
-            Console.WriteLine($"Threshold = {_threshold}, Average = {_average}B");
+            lock (GlobalLocks.WriteLock)
+            {
+                Console.WriteLine($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: High traffic generated an alert - hits = {_hits}, triggered at {_raisedAt}.");
+                Console.WriteLine($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: Threshold = {_threshold}, Average = {_average} bytes.");
+            }
         }
 
         public DateTime RaisedAt
