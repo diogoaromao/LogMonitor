@@ -1,7 +1,5 @@
-﻿using LogMonitor.Domain.DTO;
-using LogMonitor.Domain.Notification;
+﻿using LogMonitor.Domain.Notification;
 using LogMonitor.Domain.Notification.Interfaces;
-using System;
 using System.Collections.Generic;
 
 namespace LogMonitor.Domain.Timer
