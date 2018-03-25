@@ -1,5 +1,4 @@
 ﻿using LogMonitor.Domain.Timer;
-using System.Collections.Generic;
 
 namespace LogMonitor.Domain
 {

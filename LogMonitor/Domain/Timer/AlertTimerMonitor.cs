@@ -10,11 +10,12 @@ namespace LogMonitor.Domain.Timer
         private double _hits;
         private double _sumBytes;
 
-        private bool alerted;
+        private Queue<INotification> _alerts;
 
         public AlertTimerMonitor(long time, string file, double threshold) : base(time, file)
         {
             _threshold = threshold;
+            _alerts = new Queue<INotification>();
         }
 
         protected override void parseContent(string file)
@@ -37,13 +38,18 @@ namespace LogMonitor.Domain.Timer
             {
                 INotification notification = new Alert(_hits, _threshold, average);
                 printNotification(notification);
-                alerted = true;
+
+                _alerts.Enqueue(notification);
             }
-            else if(alerted)
+            else if (_alerts.Count != 0)
             {
-                INotification notification = new Recovery();
-                printNotification(notification);
-                alerted = false;
+                foreach (var alert in _alerts)
+                {
+                    INotification notification = new Recovery((Alert)alert);
+                    printNotification(notification);
+                }
+
+                _alerts.Clear();
             }
         }
 

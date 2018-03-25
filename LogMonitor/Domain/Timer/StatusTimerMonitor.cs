@@ -1,8 +1,6 @@
 ﻿using LogMonitor.Domain.Notification;
 using LogMonitor.Domain.Notification.Interfaces;
-using LogMonitor.Utils;
 using System;
-using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 
