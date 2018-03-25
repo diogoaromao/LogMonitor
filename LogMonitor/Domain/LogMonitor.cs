@@ -1,12 +1,5 @@
-﻿using LogMonitor.Domain.Notification;
-using LogMonitor.Domain.Notification.Interfaces;
-using LogMonitor.Domain.Parser;
-using LogMonitor.Domain.Timer;
-using System;
-using System.Collections.Concurrent;
+﻿using LogMonitor.Domain.Timer;
 using System.Collections.Generic;
-using System.Linq;
-using System.Timers;
 
 namespace LogMonitor.Domain
 {
@@ -23,8 +16,8 @@ namespace LogMonitor.Domain
 
         public void Monitor()
         {
-            new StatusTimerMonitor(15000, _files);
-            new AlertTimerMonitor(30000, _files, _threshold);
+            new StatusTimerMonitor(30000, _files);
+            new AlertTimerMonitor(60000, _files, _threshold);
 
             while (true)
             {

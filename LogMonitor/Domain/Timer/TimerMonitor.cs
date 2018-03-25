@@ -1,4 +1,5 @@
-﻿using LogMonitor.Domain.Notification.Interfaces;
+﻿using LogMonitor.Domain.DTO;
+using LogMonitor.Domain.Notification.Interfaces;
 using LogMonitor.Domain.Parser;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ namespace LogMonitor.Domain.Timer
     public abstract class TimerMonitor
     {
         private System.Timers.Timer _timer;
-        private long _time;
+        protected long _time;
         protected IEnumerable<string> _files;
 
         protected LogParser _logParser;
@@ -45,5 +46,10 @@ namespace LogMonitor.Domain.Timer
         {
             notification.Notify();
         }
+
+        protected bool isLineInvalid(LineDTO line)
+            => line == default(LineDTO)
+                    || DateTimeOffset.Now.Subtract(line.DateTime).TotalMilliseconds > _time
+                    || DateTimeOffset.Now.Subtract(line.DateTime).TotalMilliseconds < 0;
     }
 }

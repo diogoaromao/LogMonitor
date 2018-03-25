@@ -14,7 +14,7 @@ namespace LogMonitor.Domain.Notification
 
         public override void Notify()
         {
-            Console.WriteLine($"Most visited websites for the past minute at {DateTime.Now}");
+            Console.WriteLine($"Most visited websites since last check at {DateTime.Now}");
             foreach (var site in _mostVisitedSections)
             {
                 Console.WriteLine($"Website: {site.Key}");

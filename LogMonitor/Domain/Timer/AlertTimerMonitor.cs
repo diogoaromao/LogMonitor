@@ -1,5 +1,7 @@
-﻿using LogMonitor.Domain.Notification;
+﻿using LogMonitor.Domain.DTO;
+using LogMonitor.Domain.Notification;
 using LogMonitor.Domain.Notification.Interfaces;
+using System;
 using System.Collections.Generic;
 
 namespace LogMonitor.Domain.Timer
@@ -9,6 +11,8 @@ namespace LogMonitor.Domain.Timer
         private double _threshold;
         private double _hits;
         private double _sumBytes;
+
+        private bool alerted;
 
         // private List<Thread> _threads;
 
@@ -25,11 +29,14 @@ namespace LogMonitor.Domain.Timer
             var lines = _logParser.ParseContent(file);
             /* lock (lockObj)
             { */
-                foreach (var line in lines)
-                {
-                    _sumBytes += line.Size;
-                    _hits++;
-                }
+            foreach (var line in lines)
+            {
+                if (isLineInvalid(line))
+                    continue;
+
+                _sumBytes += line.Size;
+                _hits++;
+            }
             // }
 
             var average = getAverage(_sumBytes, _hits);
@@ -37,6 +44,13 @@ namespace LogMonitor.Domain.Timer
             {
                 INotification notification = new Alert(_hits, _threshold, average);
                 printNotification(notification);
+                alerted = true;
+            }
+            else if(alerted)
+            {
+                INotification notification = new Recovery();
+                printNotification(notification);
+                alerted = false;
             }
         }
 

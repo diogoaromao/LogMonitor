@@ -46,7 +46,7 @@ namespace LogMonitor.Domain.Parser
 
         public LineDTO parseLine(string line)
         {
-            var args = line.Split(' ');
+            var args = line.Replace("[", "").Replace("]", "").Split(' ');
 
             if (args.Length < 6)
                 return default(LineDTO);
@@ -64,7 +64,11 @@ namespace LogMonitor.Domain.Parser
             if (args.Length > 8 && Double.TryParse(args[9], out double bytes))
                 size = bytes;
 
-            return new LineDTO(webSite, section, size);
+            var dateTime = new DateTimeOffset();
+            DateTimeOffset.TryParseExact($"{args[3]}{args[4]}", "dd/MMM/yyyy:hh:mm:sszzzz", 
+                System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out dateTime);
+
+            return new LineDTO(webSite, section, size, dateTime);
         }
     }
 }
