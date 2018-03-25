@@ -15,7 +15,7 @@ namespace LogMonitor.Domain.Timer
         {
             if (!_pageHits.Any())
             {
-                Console.WriteLine($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: No websites have been visited");
+                _printer.Print($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: No websites have been visited");
                 return;
             }
 

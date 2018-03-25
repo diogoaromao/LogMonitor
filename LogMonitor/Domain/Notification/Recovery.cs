@@ -8,7 +8,7 @@ namespace LogMonitor.Domain.Notification
     {
         private DateTime _recoveredAt;
 
-        public Recovery(Alert alert)
+        public Recovery(Alert alert) : base()
         {
             _recoveredAt = alert.RaisedAt;
         }
@@ -17,7 +17,7 @@ namespace LogMonitor.Domain.Notification
         {
             lock (GlobalLocks.WriteLock)
             {
-                Console.WriteLine($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: Recovered from alert triggered at {_recoveredAt}.");
+                _printer.Print($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: Recovered from alert triggered at {_recoveredAt}.");
             }
         }
     }

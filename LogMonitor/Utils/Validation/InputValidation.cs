@@ -1,8 +1,10 @@
 ﻿using Generator;
+using LogMonitor.Utils.Logger;
 using System;
+using System.IO;
 using System.Linq;
 
-namespace LogMonitor.Utils
+namespace LogMonitor.Utils.Validation
 {
     public class InputValidation
     {
@@ -59,7 +61,23 @@ namespace LogMonitor.Utils
                     }
                     else if(argsList.Contains("-f"))
                     {
-                        Console.WriteLine(string.Format(Constants.LOG_MONITORING_STARTED, DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)));
+                        var basePath = Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName;
+                        var filePath = Path.Combine(basePath, Constants.EXAMPLES_FOLDER, file);
+                        if (!File.Exists(filePath))
+                        {
+                            Console.WriteLine(string.Format(Constants.FILE_DOES_NOT_EXIST, filePath));
+                            return;
+                        }
+
+                        var resultFilePath = Path.Combine(basePath, Constants.RESULTS_FOLDER, file);
+
+                        var printer = Printer.Instance;
+                        printer.SetFilePath(resultFilePath);
+
+                        if (File.Exists(resultFilePath))
+                            File.Delete(resultFilePath);
+
+                        printer.Print(string.Format(Constants.LOG_MONITORING_STARTED, DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)));
 
                         var logMonitor = new Domain.LogMonitor(file, threshold);
                         logMonitor.Monitor();

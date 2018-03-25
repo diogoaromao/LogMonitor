@@ -1,11 +1,10 @@
 ﻿using LogMonitor.Domain.DTO;
-using LogMonitor.Utils;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
 
-namespace LogMonitor.Domain.Parser
+namespace LogMonitor.Utils.Parser
 {
     public class LogParser
     {

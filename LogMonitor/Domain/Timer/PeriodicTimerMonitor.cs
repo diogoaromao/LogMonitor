@@ -15,7 +15,7 @@ namespace LogMonitor.Domain.Timer
         {
             if (!_pageHits.Any())
             {
-                Console.WriteLine($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: No logs detected for the past {_time / 1000} seconds.");
+                _printer.Print($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: No logs detected for the past {_time / 1000} seconds.");
                 return;
             }
 

@@ -3,6 +3,7 @@
     public static class Constants
     {
         public static string EXAMPLES_FOLDER => "examples";
+        public static string RESULTS_FOLDER => "results";
         public static string INVALID_ARGUMENTS => "Invalid arguments.";
         public static string INVALID_NUMBER_OF_ARGUMENTS => "Invalid number of arguments.";
         public static string INVALID_THRESHOLD => "Threshold value is not a valid number.";
@@ -13,6 +14,8 @@
         public static string DATETIME_GENERATION_FORMAT => "dd/MMM/yyyy:HH:mm:ss zzzz";
         public static string DATETIME_LOG_FORMAT => "HH:mm:ss";
         public static string THRESHOLD_POSITIVE_VALUE => "Please make sure that you've specified a value of at least 0 for the threshold.";
-        public static string ARGUMENTS_EXPECTED => "-g or -f arguments expected."
+        public static string ARGUMENTS_EXPECTED => "-g or -f arguments expected.";
+        public static string FILE_DOES_NOT_EXIST => "File or Directory not found: {0}.";
+        public static string RESULT_FILE_NOT_SET => "Result log file is not set.";
     }
 }

@@ -11,7 +11,7 @@ namespace LogMonitor.Domain.Notification
         private double _average;
         private DateTime _raisedAt;
 
-        public Alert(double hits, double threshold, double average)
+        public Alert(double hits, double threshold, double average) : base()
         {
             _hits = hits;
             _threshold = threshold;
@@ -23,8 +23,8 @@ namespace LogMonitor.Domain.Notification
         {
             lock (GlobalLocks.WriteLock)
             {
-                Console.WriteLine($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: High traffic generated an alert - hits = {_hits}, triggered at {_raisedAt}.");
-                Console.WriteLine($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: Threshold = {_threshold}, Average = {_average} bytes.");
+                _printer.Print($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: High traffic generated an alert - hits = {_hits}, triggered at {_raisedAt}.");
+                _printer.Print($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: Threshold = {_threshold}, Average = {_average} bytes.");
             }
         }
 

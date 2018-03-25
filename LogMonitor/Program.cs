@@ -1,4 +1,4 @@
-﻿using LogMonitor.Utils;
+﻿using LogMonitor.Utils.Validation;
 
 namespace LogMonitor
 {

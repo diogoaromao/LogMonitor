@@ -1,6 +1,7 @@
 ﻿using LogMonitor.Domain.DTO;
 using LogMonitor.Domain.Notification.Interfaces;
-using LogMonitor.Domain.Parser;
+using LogMonitor.Utils.Logger;
+using LogMonitor.Utils.Parser;
 using System;
 using System.Timers;
 
@@ -13,6 +14,7 @@ namespace LogMonitor.Domain.Timer
         protected string _file;
 
         protected LogParser _logParser;
+        protected Printer _printer;
 
         protected readonly Object lockObj = new Object();
 
@@ -26,6 +28,7 @@ namespace LogMonitor.Domain.Timer
             _timer.Enabled = true;
 
             _logParser = LogParser.Instance;
+            _printer = Printer.Instance;
         }
 
         protected virtual void Handle(object source, ElapsedEventArgs e)
@@ -43,6 +46,7 @@ namespace LogMonitor.Domain.Timer
         protected bool isLineInvalid(LineDTO line)
             => line == default(LineDTO)
                     || DateTimeOffset.Now.Subtract(line.DateTime).TotalMilliseconds > _time
-                    || DateTimeOffset.Now.Subtract(line.DateTime).TotalMilliseconds < 0;
+                    || DateTimeOffset.Now.Subtract(line.DateTime).TotalMilliseconds < 0
+                    || line.Website.Contains("-");
     }
 }

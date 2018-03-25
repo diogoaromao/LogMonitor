@@ -9,7 +9,7 @@ namespace LogMonitor.Domain.Notification
     {
         IEnumerable<KeyValuePair<string, List<string>>> _mostVisitedSections;
 
-        public PeriodicStatus(IEnumerable<KeyValuePair<string, List<string>>> mostVisitedSections)
+        public PeriodicStatus(IEnumerable<KeyValuePair<string, List<string>>> mostVisitedSections) : base()
         {
             _mostVisitedSections = mostVisitedSections;
         }
@@ -18,15 +18,15 @@ namespace LogMonitor.Domain.Notification
         {
             lock (GlobalLocks.WriteLock)
             {
-                Console.WriteLine($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: Most visited websites since last check:");
+                _printer.Print($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: Most visited websites since last check:");
                 foreach (var site in _mostVisitedSections)
                 {
-                    Console.WriteLine($"Website: {site.Key}");
-                    Console.WriteLine("Sections:");
+                    _printer.Print($"Website: {site.Key}");
+                    _printer.Print("Sections:");
 
                     foreach (var value in site.Value)
                     {
-                        Console.WriteLine($"{value}");
+                        _printer.Print($"{value}");
                     }
                 }
             }

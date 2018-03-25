@@ -49,16 +49,17 @@
     <Compile Include="Domain\Notification\Interfaces\INotification.cs" />
     <Compile Include="Domain\Notification\CumulativeStatus.cs" />
     <Compile Include="Domain\Notification\PeriodicStatus.cs" />
-    <Compile Include="Domain\Parser\LogParser.cs" />
+    <Compile Include="Utils\Parser\LogParser.cs" />
     <Compile Include="Domain\Notification\Notification.cs" />
     <Compile Include="Domain\Timer\AlertTimerMonitor.cs" />
     <Compile Include="Domain\Timer\PeriodicTimerMonitor.cs" />
     <Compile Include="Domain\Timer\CumulativeTimerMonitor.cs" />
     <Compile Include="Domain\Timer\StatusTimerMonitor.cs" />
     <Compile Include="Domain\Timer\TimerMonitor.cs" />
-    <Compile Include="Utils\InputValidation.cs" />
+    <Compile Include="Utils\Validation\InputValidation.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Logger\Printer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -73,5 +74,6 @@
       <Name>Utils</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
