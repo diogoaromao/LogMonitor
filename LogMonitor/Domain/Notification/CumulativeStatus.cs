@@ -6,7 +6,7 @@ using Utils;
 
 namespace LogMonitor.Domain.Notification
 {
-    public class CumulativeStatus : Status
+    public class CumulativeStatus : Notification
     {
         private IOrderedEnumerable<KeyValuePair<string, int>> _orderedWebsites;
 

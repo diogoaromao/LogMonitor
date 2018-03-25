@@ -5,7 +5,7 @@ using Utils;
 
 namespace LogMonitor.Domain.Notification
 {
-    public class PeriodicStatus : Status
+    public class PeriodicStatus : Notification
     {
         IEnumerable<KeyValuePair<string, List<string>>> _mostVisitedSections;
 

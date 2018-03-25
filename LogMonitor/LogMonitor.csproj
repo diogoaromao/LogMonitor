@@ -49,7 +49,6 @@
     <Compile Include="Domain\Notification\Interfaces\INotification.cs" />
     <Compile Include="Domain\Notification\CumulativeStatus.cs" />
     <Compile Include="Domain\Notification\PeriodicStatus.cs" />
-    <Compile Include="Domain\Notification\Status.cs" />
     <Compile Include="Domain\Parser\LogParser.cs" />
     <Compile Include="Domain\Notification\Notification.cs" />
     <Compile Include="Domain\Timer\AlertTimerMonitor.cs" />
