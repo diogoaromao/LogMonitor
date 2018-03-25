@@ -29,7 +29,7 @@ Create a simple console program that monitors HTTP traffic on your machine:
 To be done...
 
 ## Improvements ##
-1. Possibility to read more than 1 log file.
+1. Possibility to read from more than 1 log file at the same time.
 2. Arguments validation is not working properly. The user can input a log to monitor and ask to generate a log. Only the latter one will be done.
 3. When two or more arguments are not valid, the corresponding number of errors should be shown and not only the first one.
 4. Possibility to parse the log from a supplied path instead of only from the examples folder.
