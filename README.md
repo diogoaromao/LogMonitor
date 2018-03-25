@@ -12,14 +12,14 @@ Create a simple console program that monitors HTTP traffic on your machine:
 * Explain how you’d improve on this application design
 
 ## Running the log generator ##
-1. Open Visual Studio and Build code on Release Mode
+1. Open project on Visual Studio and "Build Solution" on Release Mode
 2. Open a Windows Powershell and navigate to the project bin\Release folder
 ```
 .\LogMonitor.exe -t 1000 -g
 ```
 
 ## Running the monitor ##
-1. Open Visual Studio and Build code on Release Mode
+1. Open poject Visual Studio and "Build Solution" on Release Mode
 2. Open a Windows Powershell and navigate to the project bin\Release folder
 ```
 .\LogMonitor.exe -t 1000 -f generated.txt
