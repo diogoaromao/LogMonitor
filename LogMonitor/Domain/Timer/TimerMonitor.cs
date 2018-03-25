@@ -11,16 +11,16 @@ namespace LogMonitor.Domain.Timer
     {
         private System.Timers.Timer _timer;
         protected long _time;
-        protected IEnumerable<string> _files;
+        protected string _file;
 
         protected LogParser _logParser;
 
         protected readonly Object lockObj = new Object();
 
-        public TimerMonitor(long time, IEnumerable<string> files)
+        public TimerMonitor(long time, string file)
         {
             _time = time;
-            _files = files;
+            _file = file;
             _timer = new System.Timers.Timer();
             _timer.Elapsed += new ElapsedEventHandler(Handle);
             _timer.Interval = time;
@@ -31,13 +31,7 @@ namespace LogMonitor.Domain.Timer
 
         protected virtual void Handle(object source, ElapsedEventArgs e)
         {
-            foreach (var file in _files)
-            {
-                /*Thread thread = new Thread(() => parseContent(file));
-                _threads.Add(thread);
-                thread.Start();*/
-                parseContent(file); // let's assume only one file is supplied
-            }
+            parseContent(_file);
         }
 
         protected abstract void parseContent(string file);

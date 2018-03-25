@@ -65,7 +65,7 @@ namespace LogMonitor.Domain.Parser
                 size = bytes;
 
             var dateTime = new DateTimeOffset();
-            DateTimeOffset.TryParseExact($"{args[3]}{args[4]}", "dd/MMM/yyyy:hh:mm:sszzzz", 
+            DateTimeOffset.TryParseExact($"{args[3]}{args[4]}", Constants.DATETIME_FORMAT, 
                 System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out dateTime);
 
             return new LineDTO(webSite, section, size, dateTime);

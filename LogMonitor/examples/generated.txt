@@ -1,0 +1,7 @@
+pwpark.remote.Princeton.EDU - - [25/mar/2018:12:54:43 +01:00] "GET http://www.quora.com/pub/peace/VRS9.html HTTP/1.0" 200 2187
+debasement.clark.net - - [25/mar/2018:12:54:44 +01:00] "GET http://www.facebook.com/pub/tblake/www/intel.gif HTTP/1.0" 304 -
+ppp.a2.ulaval.ca - - [25/mar/2018:12:54:45 +01:00] "GET http://www.datadog.com/pub/job/vk/flowers1.gif HTTP/1.0" 200 4288
+shep102.wustl.edu - - [25/mar/2018:12:54:46 +01:00] "GET http://www.facebook.com/pub/pribut/redblsm.gif HTTP/1.0" 200 269
+shep102.wustl.edu - - [25/mar/2018:12:54:47 +01:00] "GET http://www.facebook.com/pub/pribut/spsport.html HTTP/1.0" 200 3589
+ppp.mia.94.shadow.net - - [25/mar/2018:12:54:48 +01:00] "GET http://www.quora.com/pub/robert/current.html HTTP/1.0" 200 30337
+crl12.crl.com - - [25/mar/2018:12:54:49 +01:00] "GET http://www.quora.com/pub/atomicbk/logo2.gif HTTP/1.0" 200 12871

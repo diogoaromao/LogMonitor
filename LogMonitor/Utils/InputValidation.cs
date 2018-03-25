@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Generator;
+using System;
 using System.Linq;
 
 namespace LogMonitor.Utils
@@ -16,7 +17,7 @@ namespace LogMonitor.Utils
         {
             var argsList = _args.ToList();
 
-            if (!argsList.Contains("-t") && !argsList.Contains("-f"))
+            if (!argsList.Contains("-t") && !argsList.Contains("-f") && !argsList.Contains("-g"))
             {
                 Console.WriteLine(Constants.INVALID_ARGUMENTS);
                 return;
@@ -24,34 +25,43 @@ namespace LogMonitor.Utils
 
             var thresholdIndex = argsList.FindIndex(arg => arg.Equals("-t"));
 
-            if (_args.Length < 2)
+            if (argsList.Count() < 2)
             {
                 Console.WriteLine(Constants.INVALID_NUMBER_OF_ARGUMENTS);
                 return;
             }
 
-            if (_args.Length > thresholdIndex)
+            if (argsList.Count() > thresholdIndex)
             {
                 double threshold = -1;
-                if (!Double.TryParse(_args[thresholdIndex + 1], out threshold) && thresholdIndex != -1)
+                if (!Double.TryParse(argsList.ElementAt(thresholdIndex + 1), out threshold) && thresholdIndex != -1)
                 {
                     Console.WriteLine(Constants.INVALID_THRESHOLD);
                     return;
                 }
 
                 var fileIndex = argsList.FindIndex(arg => arg.Equals("-f"));
-                var files = argsList.Where(f => argsList.IndexOf(f) > fileIndex);
+                var file = argsList.Where(f => argsList.IndexOf(f) > fileIndex)
+                                .FirstOrDefault();
 
-                if (!files.Any())
+                if (file == null)
                 {
                     Console.WriteLine(Constants.INVALID_FILENAME);
                     return;
                 }
 
-                Console.WriteLine(string.Format(Constants.LOG_MONITORING_STARTED, DateTime.Now));
+                if (argsList.Contains("-g") && threshold > -1)
+                {
+                    var generator = new LogGenerator(threshold);
+                    generator.Generate();
+                }
+                else
+                {
+                    Console.WriteLine(string.Format(Constants.LOG_MONITORING_STARTED, DateTime.Now));
 
-                var logMonitor = new Domain.LogMonitor(files, threshold);
-                logMonitor.Monitor();
+                    var logMonitor = new Domain.LogMonitor(file, threshold);
+                    logMonitor.Monitor();
+                }
             }
         }
     }

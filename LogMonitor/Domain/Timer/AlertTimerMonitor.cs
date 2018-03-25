@@ -12,12 +12,9 @@ namespace LogMonitor.Domain.Timer
 
         private bool alerted;
 
-        // private List<Thread> _threads;
-
-        public AlertTimerMonitor(long time, IEnumerable<string> files, double threshold) : base(time, files)
+        public AlertTimerMonitor(long time, string file, double threshold) : base(time, file)
         {
             _threshold = threshold;
-            // _threads = new List<Thread>();
         }
 
         protected override void parseContent(string file)
@@ -25,8 +22,7 @@ namespace LogMonitor.Domain.Timer
             _sumBytes = _hits = 0;
 
             var lines = _logParser.ParseContent(file);
-            /* lock (lockObj)
-            { */
+
             foreach (var line in lines)
             {
                 if (isLineInvalid(line))
@@ -35,7 +31,6 @@ namespace LogMonitor.Domain.Timer
                 _sumBytes += line.Size;
                 _hits++;
             }
-            // }
 
             var average = getAverage(_sumBytes, _hits);
             if (average > _threshold)

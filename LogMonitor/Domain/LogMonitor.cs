@@ -5,19 +5,19 @@ namespace LogMonitor.Domain
 {
     public class LogMonitor
     {
-        private IEnumerable<string> _files;
+        private string _file;
         private double _threshold;
 
-        public LogMonitor(IEnumerable<string> files, double threshold)
+        public LogMonitor(string file, double threshold)
         {
-            _files = files;
+            _file = file;
             _threshold = threshold;
         }
 
         public void Monitor()
         {
-            new StatusTimerMonitor(30000, _files);
-            new AlertTimerMonitor(60000, _files, _threshold);
+            new StatusTimerMonitor(30000, _file);
+            new AlertTimerMonitor(60000, _file, _threshold);
 
             while (true)
             {
