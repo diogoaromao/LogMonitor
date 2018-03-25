@@ -35,3 +35,4 @@ To be done...
 4. If user supplies a log file that doesn't exist, an exception will be thrown.
 5. Write Log Monitoring result to file.
 6. Possibility to parse the log from a supplied path instead of only from the examples folder.
+7. Should be possible to generate a log file without the need to specify the threshold.
