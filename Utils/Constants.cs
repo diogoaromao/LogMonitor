@@ -12,5 +12,7 @@
         public static string DATETIME_FORMAT => "dd/MMM/yyyy:HH:mm:sszzzz";
         public static string DATETIME_GENERATION_FORMAT => "dd/MMM/yyyy:HH:mm:ss zzzz";
         public static string DATETIME_LOG_FORMAT => "HH:mm:ss";
+        public static string THRESHOLD_POSITIVE_VALUE => "Please make sure that you've specified a value of at least 0 for the threshold.";
+        public static string ARGUMENTS_EXPECTED => "-g or -f arguments expected."
     }
 }

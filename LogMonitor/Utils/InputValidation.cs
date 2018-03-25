@@ -50,17 +50,28 @@ namespace LogMonitor.Utils
                     return;
                 }
 
-                if (argsList.Contains("-g") && threshold > -1)
+                if (threshold > -1)
                 {
-                    var generator = new LogGenerator(threshold);
-                    generator.Generate();
+                    if (argsList.Contains("-g"))
+                    {
+                        var generator = new LogGenerator(threshold);
+                        generator.Generate();
+                    }
+                    else if(argsList.Contains("-f"))
+                    {
+                        Console.WriteLine(string.Format(Constants.LOG_MONITORING_STARTED, DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)));
+
+                        var logMonitor = new Domain.LogMonitor(file, threshold);
+                        logMonitor.Monitor();
+                    }
+                    else
+                    {
+                        Console.WriteLine(Constants.ARGUMENTS_EXPECTED);
+                    }
                 }
                 else
                 {
-                    Console.WriteLine(string.Format(Constants.LOG_MONITORING_STARTED, DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)));
-
-                    var logMonitor = new Domain.LogMonitor(file, threshold);
-                    logMonitor.Monitor();
+                    Console.WriteLine(Constants.THRESHOLD_POSITIVE_VALUE);
                 }
             }
         }
