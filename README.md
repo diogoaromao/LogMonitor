@@ -31,8 +31,7 @@ To be done...
 ## Improvements ##
 1. Possibility to read more than 1 log file.
 2. Arguments validation is not working properly. The user can input a log to monitor and ask to generate a log. Only the latter one will be done.
-3. Sites as dashes should be ignored.
-4. If user supplies a log file that doesn't exist, an exception will be thrown.
-5. Write Log Monitoring result to file.
-6. Possibility to parse the log from a supplied path instead of only from the examples folder.
-7. Should be possible to generate a log file without the need to specify the threshold.
+3. If user supplies a log file that doesn't exist, an exception will be thrown.
+4. Write Log Monitoring result to file.
+5. Possibility to parse the log from a supplied path instead of only from the examples folder.
+6. Should be possible to generate a log file without the need to specify the threshold.
