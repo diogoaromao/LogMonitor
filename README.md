@@ -53,3 +53,4 @@ Create a simple console program that monitors HTTP traffic on your machine:
 6. Should be possible to generate a log file without the need to specify the threshold.
 7. Components like Notification, Timer and Logger should be testable.
 8. Use dependency injection (Autofac).
+9. Possibility to set how frequently a timer runs and the timespan of the logs it's interested in.
