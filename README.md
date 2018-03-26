@@ -12,21 +12,34 @@ Create a simple console program that monitors HTTP traffic on your machine:
 * Explain how you’d improve on this application design
 
 ## Running the log generator ##
-1. Open project on Visual Studio and "Build Solution" on Release Mode
-2. Open a Windows Powershell and navigate to the project bin\Release folder
+1. Please make sure you have Visual Studio 2017 Community version installed on your computer.
+2. Open a Windows Powershell and navigate to the project Powershell folder.
+3. Run
+```
+.\Build.ps1
+```
 ```
 .\LogMonitor.exe -t 1000 -g
 ```
 
 ## Running the monitor ##
-1. Open poject Visual Studio and "Build Solution" on Release Mode
-2. Open a Windows Powershell and navigate to the project bin\Release folder
+1. Please make sure you have Visual Studio 2017 Community version installed on your computer.
+2. Open a Windows Powershell and navigate to the project Powershell folder.
+3. Run
+```
+.\Build.ps1
+```
 ```
 .\LogMonitor.exe -t 1000 -f generated.txt
 ```
 
 ## Running tests ##
-To be done...
+1. Please make sure you have Visual Studio 2017 Community version installed on your computer.
+2. Open a Windows Powershell and navigate to the project Powershell folder.
+3. Run
+```
+.\Test.ps1
+```
 
 ## Improvements ##
 1. Possibility to read from more than 1 log file at the same time.
@@ -35,5 +48,5 @@ To be done...
 4. Possibility to parse the log from a supplied path instead of only from the examples folder.
 5. Possibility to write the resulting log to a supplied path instead of only to the results folder.
 6. Should be possible to generate a log file without the need to specify the threshold.
-7. Code refactor
-8. Use dependency injection
+7. Make it possible to test other components like (Notifications, Timers and Logger)
+8. Use dependency injection (Autofac).
