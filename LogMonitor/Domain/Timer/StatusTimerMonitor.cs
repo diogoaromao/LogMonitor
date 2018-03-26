@@ -39,31 +39,6 @@ namespace LogMonitor.Domain.Timer
                 });
 
                 _pageHits.AddOrUpdate(line.Website, 1, (id, count) => count + 1);
-
-                /*if (_sections.ContainsKey(line.Website))
-                {
-                    var sections = _sections[line.Website];
-                    if (!sections.Contains(line.Section))
-                    {
-                        sections.Add(line.Section);
-                        _sections[line.Website] = sections;
-                    }
-                }
-                else
-                {
-                    var sections = new List<string>();
-                    sections.Add(line.Section);
-                    _sections.Add(line.Website, sections);
-                }
-
-                if(_pageHits.ContainsKey(line.Website))
-                {
-                    _pageHits[line.Website] = ++_pageHits[line.Website];
-                }
-                else
-                {
-                    _pageHits.Add(line.Website, 1);
-                }*/
             }
 
             printTopHits();
