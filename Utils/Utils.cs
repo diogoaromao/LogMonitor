@@ -1,17 +1,20 @@
-﻿namespace LogMonitor.Utils
+﻿using System;
+using System.Collections.Generic;
+
+namespace LogMonitor.Utils
 {
     public static class Utils
     {
-        /*public static void AddOrUpdate<TKey, TValue>(this Dictionary<TKey, TValue> dictionary, TKey key, TValue value, Func<TKey, TValue , TValue> updateValueFactory)
+        public static void AddOrUpdate<TKey, TValue>(this Dictionary<TKey, TValue> dictionary, TKey key, TValue value, Func<TKey, TValue , TValue> updateValueFactory)
         {
             if(dictionary.ContainsKey(key))
             {
-                updateValueFactory();
+                dictionary[key] = updateValueFactory(key, dictionary[key]);
             }
             else
             {
                 dictionary.Add(key, value);
             }
-        }*/
+        }
     }
 }

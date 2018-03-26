@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using LogMonitor.Utils;
+using System.Collections.Generic;
 
 namespace LogMonitor.Domain.Timer
 {
@@ -29,7 +30,7 @@ namespace LogMonitor.Domain.Timer
                 if (isLineInvalid(line))
                     continue;
 
-                /*_sections.AddOrUpdate(line.Website, new List<string> { line.Section }, (site, sections) =>
+                _sections.AddOrUpdate(line.Website, new List<string> { line.Section }, (site, sections) =>
                 {
                     if (!sections.Contains(line.Section))
                         sections.Add(line.Section);
@@ -37,9 +38,9 @@ namespace LogMonitor.Domain.Timer
                     return sections;
                 });
 
-                _pageHits.AddOrUpdate(line.Website, 1, (id, count) => count + 1);*/
+                _pageHits.AddOrUpdate(line.Website, 1, (id, count) => count + 1);
 
-                if (_sections.ContainsKey(line.Website))
+                /*if (_sections.ContainsKey(line.Website))
                 {
                     var sections = _sections[line.Website];
                     if (!sections.Contains(line.Section))
@@ -62,7 +63,7 @@ namespace LogMonitor.Domain.Timer
                 else
                 {
                     _pageHits.Add(line.Website, 1);
-                }
+                }*/
             }
 
             printTopHits();

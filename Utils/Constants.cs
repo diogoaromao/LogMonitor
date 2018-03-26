@@ -4,6 +4,7 @@
     {
         public static string EXAMPLES_FOLDER => "examples";
         public static string RESULTS_FOLDER => "results";
+        public static string TESTS_FOLDER => "tests";
         public static string INVALID_ARGUMENTS => "Invalid arguments.";
         public static string INVALID_NUMBER_OF_ARGUMENTS => "Invalid number of arguments.";
         public static string INVALID_THRESHOLD => "Threshold value is not a valid number.";
