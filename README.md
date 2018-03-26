@@ -38,6 +38,9 @@ Create a simple console program that monitors HTTP traffic on your machine:
 2. Open a Windows Powershell and navigate to the project Powershell folder.
 3. Run
 ```
+.\Build.ps1
+```
+```
 .\Test.ps1
 ```
 
