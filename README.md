@@ -19,7 +19,7 @@ Create a simple console program that monitors HTTP traffic on your machine:
 .\Build.ps1
 ```
 ```
-.\LogMonitor.exe -t 1000 -g
+.\LogMonitor.exe [-t threshold] -g
 ```
 
 ## Running the monitor ##
@@ -30,7 +30,7 @@ Create a simple console program that monitors HTTP traffic on your machine:
 .\Build.ps1
 ```
 ```
-.\LogMonitor.exe -t 1000 -f generated.txt
+.\LogMonitor.exe [-t threshold] -f generated.txt
 ```
 
 ## Running tests ##
