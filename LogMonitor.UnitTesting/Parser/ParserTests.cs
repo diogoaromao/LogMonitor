@@ -1,32 +1,22 @@
 ﻿using LogMonitor.Domain.DTO;
-using LogMonitor.Utils;
-using LogMonitor.Utils.Parser;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.IO;
 using System.Linq;
 
-namespace LogMonitor.UnitTesting
+namespace LogMonitor.UnitTesting.Parser
 {
     [TestClass]
-    public class ParserTests
+    public class ParserTests : ParserBaseTests
     {
-        private string _testsPath;
-        private LogParser _parser;
-
-        public ParserTests()
-        {
-            _testsPath = Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, Constants.TESTS_FOLDER);
-            _parser = LogParser.Instance;
-        }
+        public ParserTests() : base() { }
 
         [TestMethod]
         public void LogParser_ParseSingleLine_HasContent()
         {
             // Arrange
-            var file = "logParserTest1.txt";
+            SetupTest("logParserTest1.txt");
 
             // Act
-            var lines = _parser.ParseContent(Path.Combine(_testsPath, file));
+            var lines = _parser.ParseContent(_testPath);
 
             // Assert
             Assert.IsTrue(lines.Any());
@@ -36,10 +26,10 @@ namespace LogMonitor.UnitTesting
         public void LogParser_ParseSingleLine_SingleResult()
         {
             // Arrange
-            var file = "logParserTest1.txt";
-            
+            SetupTest("logParserTest1.txt");
+
             // Act
-            var lines = _parser.ParseContent(Path.Combine(_testsPath, file));
+            var lines = _parser.ParseContent(_testPath);
 
             // Assert
             Assert.AreEqual(1, lines.Count());
@@ -49,10 +39,10 @@ namespace LogMonitor.UnitTesting
         public void LogParser_ParseSingleLine_Website()
         {
             // Arrange
-            var file = "logParserTest1.txt";
+            SetupTest("logParserTest1.txt");
 
             // Act
-            var lines = _parser.ParseContent(Path.Combine(_testsPath, file));
+            var lines = _parser.ParseContent(_testPath);
 
             // Assert
             Assert.AreEqual("http://www.google.com", lines.First().Website);
@@ -62,10 +52,10 @@ namespace LogMonitor.UnitTesting
         public void LogParser_ParseSingleLine_LessThanSixArguments()
         {
             // Arrange
-            var file = "logParserTest2.txt";
+            SetupTest("logParserTest2.txt");
 
             // Act
-            var lines = _parser.ParseContent(Path.Combine(_testsPath, file));
+            var lines = _parser.ParseContent(_testPath);
 
             // Assert
             Assert.AreEqual(default(LineDTO), lines.First());
@@ -75,10 +65,10 @@ namespace LogMonitor.UnitTesting
         public void LogParser_ParseSingleLine_LessThanTenArguments()
         {
             // Arrange
-            var file = "logParserTest2.txt";
+            SetupTest("logParserTest2.txt");
 
             // Act
-            var lines = _parser.ParseContent(Path.Combine(_testsPath, file));
+            var lines = _parser.ParseContent(_testPath);
 
             // Assert
             Assert.AreEqual(default(LineDTO), lines.First());
@@ -88,10 +78,10 @@ namespace LogMonitor.UnitTesting
         public void LogParser_ParseSingleLine_DashedSize()
         {
             // Arrange
-            var file = "logParserTest3.txt";
+            SetupTest("logParserTest3.txt");
 
             // Act
-            var lines = _parser.ParseContent(Path.Combine(_testsPath, file));
+            var lines = _parser.ParseContent(_testPath);
 
             // Assert
             Assert.AreEqual(0, lines.First().Size);
