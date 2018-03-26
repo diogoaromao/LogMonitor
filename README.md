@@ -51,5 +51,5 @@ Create a simple console program that monitors HTTP traffic on your machine:
 4. Possibility to parse the log from a supplied path instead of only from the examples folder.
 5. Possibility to write the resulting log to a supplied path instead of only to the results folder.
 6. Should be possible to generate a log file without the need to specify the threshold.
-7. Make it possible to test other components like (Notifications, Timers and Logger)
+7. Components like Notification, Timer and Logger should be testable.
 8. Use dependency injection (Autofac).
