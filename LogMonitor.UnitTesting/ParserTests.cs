@@ -1,4 +1,5 @@
-﻿using LogMonitor.Utils;
+﻿using LogMonitor.Domain.DTO;
+using LogMonitor.Utils;
 using LogMonitor.Utils.Parser;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.IO;
@@ -57,6 +58,43 @@ namespace LogMonitor.UnitTesting
             Assert.AreEqual("http://www.google.com", lines.First().Website);
         }
 
-        
+        [TestMethod]
+        public void LogParser_ParseSingleLine_LessThanSixArguments()
+        {
+            // Arrange
+            var file = "logParserTest2.txt";
+
+            // Act
+            var lines = _parser.ParseContent(Path.Combine(_testsPath, file));
+
+            // Assert
+            Assert.AreEqual(default(LineDTO), lines.First());
+        }
+
+        [TestMethod]
+        public void LogParser_ParseSingleLine_LessThanTenArguments()
+        {
+            // Arrange
+            var file = "logParserTest2.txt";
+
+            // Act
+            var lines = _parser.ParseContent(Path.Combine(_testsPath, file));
+
+            // Assert
+            Assert.AreEqual(default(LineDTO), lines.First());
+        }
+
+        [TestMethod]
+        public void LogParser_ParseSingleLine_DashedSize()
+        {
+            // Arrange
+            var file = "logParserTest3.txt";
+
+            // Act
+            var lines = _parser.ParseContent(Path.Combine(_testsPath, file));
+
+            // Assert
+            Assert.AreEqual(0, lines.First().Size);
+        }
     }
 }

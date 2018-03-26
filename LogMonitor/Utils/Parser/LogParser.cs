@@ -43,11 +43,11 @@ namespace LogMonitor.Utils.Parser
             }
         }
 
-        public LineDTO parseLine(string line)
+        private LineDTO parseLine(string line)
         {
             var args = line.Replace("[", "").Replace("]", "").Split(' ');
 
-            if (args.Length < 6)
+            if (args.Length < 10)
                 return default(LineDTO);
 
             var url = args[6];
