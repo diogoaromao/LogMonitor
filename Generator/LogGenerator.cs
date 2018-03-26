@@ -44,7 +44,7 @@ namespace Generator
         {
             _threshold = threshold;
             _random = new Random((int)DateTime.Now.Ticks);
-            _lastDateTime = DateTimeOffset.Now.AddMinutes(1);
+            _lastDateTime = DateTimeOffset.Now.AddMinutes(2);
         }
 
         public void Generate()
