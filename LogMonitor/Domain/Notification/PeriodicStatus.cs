@@ -18,7 +18,7 @@ namespace LogMonitor.Domain.Notification
         {
             lock (GlobalLocks.WriteLock)
             {
-                _printer.Print(string.Format(Constants.RECENT_WEBSITES_VISITED, DateTime.Now));
+                _printer.Print(string.Format(Constants.RECENT_WEBSITES_VISITED, DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)));
                 foreach (var site in _mostVisitedSections)
                 {
                     _printer.Print(string.Format(Constants.WEBSITE, site.Key));

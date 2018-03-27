@@ -34,15 +34,14 @@
         public static string LOG_MONITORING_STARTED => "[{0}]: Log Monitoring Started.";
         public static string WEBSITES_VISITED => "[{0}]: Websites visited since monitoring started:";
         public static string WEBSITES_VISITED_COUNT => "{0} - {1} time(s).";
-        public static string HOST_VISITS => "[{0}]: Host who generated the most traffic: {1} - {2} hits.";
+        public static string HOSTS_VISITS => "[{0}]: Host who generated the most traffic:";
+        public static string HOSTS_TRAFFIC => "[{0}]: {1} - {2} hits.";
         public static string ALERT_TRIGGERED => "[{0}]: High traffic generated an alert - hits = {1}, triggered at {2}.";
         public static string ALERT_AVERAGE => "[{0}]: Threshold = {1}, Average = {2} bytes.";
         public static string RECENT_WEBSITES_VISITED => "[{0}]: Most visited websites since last check:";
         public static string WEBSITE => "Website: {0}";
         public static string SECTIONS => "Sections:";
         public static string RECOVERED => "[{0}]: Recovered from alert triggered at {1}.";
-        public static string NO_WEBSITES_VISITED => "[{0}]: No websites have been visited";
-        public static string NO_RECENT_VISITS => "[{0}]: No logs detected for the past {1} seconds.";
         #endregion
     }
 }

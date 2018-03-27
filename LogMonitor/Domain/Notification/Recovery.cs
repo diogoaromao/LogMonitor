@@ -17,7 +17,7 @@ namespace LogMonitor.Domain.Notification
         {
             lock (GlobalLocks.WriteLock)
             {
-                _printer.Print(string.Format(Constants.RECOVERED, DateTime.Now, _recoveredAt));
+                _printer.Print(string.Format(Constants.RECOVERED, DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT), _recoveredAt));
             }
         }
     }

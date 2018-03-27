@@ -15,13 +15,7 @@ namespace LogMonitor.Domain.Timer
         protected override void printTopHits()
         {
             if (!_pageHits.Any())
-            {
-                lock (GlobalLocks.WriteLock)
-                {
-                    _printer.Print(string.Format(Constants.NO_RECENT_VISITS, DateTime.Now, (_time / 1000)));
-                }
                 return;
-            }
 
             var maxValue = _pageHits.Aggregate((h1, h2) => h1.Value > h2.Value ? h1 : h2).Value;
             List<string> keys = _pageHits.Where(pair => pair.Value == maxValue)
