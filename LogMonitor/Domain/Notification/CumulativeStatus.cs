@@ -32,7 +32,7 @@ namespace LogMonitor.Domain.Notification
 
                 foreach(var kvp in _hosts)
                 {
-                    _printer.Print(string.Format(Constants.HOSTS_TRAFFIC, DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT), kvp.Key, kvp.Value));
+                    _printer.Print(string.Format(Constants.HOSTS_TRAFFIC, kvp.Key, kvp.Value));
                 }
             }
         }
