@@ -1,378 +1,381 @@
-[18:47:54]: Log Monitoring Started.
-[18:48:24]: No logs detected for the past 30 seconds.
-[18:48:54]: No logs detected for the past 30 seconds.
-[18:48:54]: No websites have been visited
-[18:49:24]: No logs detected for the past 30 seconds.
-[18:49:52]: High traffic generated an alert - hits = 1, triggered at 27/03/2018 18:49:52.
-[18:49:52]: Threshold = 1000, Average = 1007 bytes.
-[18:49:54]: Websites visited since monitoring started:
-http://www.quora.com - 2 time(s)
-[18:49:54]: Most visited websites since last check:
-Website: http://www.quora.com
-Sections:
-http://www.quora.com/pub
-[18:49:54]: High traffic generated an alert - hits = 2, triggered at 27/03/2018 18:49:54.
-[18:49:54]: Threshold = 1000, Average = 1392 bytes.
-[18:49:56]: High traffic generated an alert - hits = 3, triggered at 27/03/2018 18:49:56.
-[18:49:56]: Threshold = 1000, Average = 1349,33333333333 bytes.
-[18:49:58]: High traffic generated an alert - hits = 4, triggered at 27/03/2018 18:49:58.
-[18:49:58]: Threshold = 1000, Average = 1355,75 bytes.
-[18:50:00]: High traffic generated an alert - hits = 5, triggered at 27/03/2018 18:50:00.
-[18:50:00]: Threshold = 1000, Average = 1316,8 bytes.
-[18:50:02]: High traffic generated an alert - hits = 6, triggered at 27/03/2018 18:50:02.
-[18:50:02]: Threshold = 1000, Average = 1334,66666666667 bytes.
-[18:50:04]: High traffic generated an alert - hits = 7, triggered at 27/03/2018 18:50:04.
-[18:50:04]: Threshold = 1000, Average = 1371,71428571429 bytes.
-[18:50:06]: High traffic generated an alert - hits = 8, triggered at 27/03/2018 18:50:06.
-[18:50:06]: Threshold = 1000, Average = 1357,625 bytes.
-[18:50:08]: High traffic generated an alert - hits = 9, triggered at 27/03/2018 18:50:08.
-[18:50:08]: Threshold = 1000, Average = 1407,44444444444 bytes.
-[18:50:10]: High traffic generated an alert - hits = 10, triggered at 27/03/2018 18:50:10.
-[18:50:10]: Threshold = 1000, Average = 1420,5 bytes.
-[18:50:12]: High traffic generated an alert - hits = 11, triggered at 27/03/2018 18:50:12.
-[18:50:12]: Threshold = 1000, Average = 1459,63636363636 bytes.
-[18:50:14]: High traffic generated an alert - hits = 12, triggered at 27/03/2018 18:50:14.
-[18:50:14]: Threshold = 1000, Average = 1467,83333333333 bytes.
-[18:50:16]: High traffic generated an alert - hits = 13, triggered at 27/03/2018 18:50:16.
-[18:50:16]: Threshold = 1000, Average = 1497,92307692308 bytes.
-[18:50:18]: High traffic generated an alert - hits = 14, triggered at 27/03/2018 18:50:18.
-[18:50:18]: Threshold = 1000, Average = 1478 bytes.
-[18:50:20]: High traffic generated an alert - hits = 15, triggered at 27/03/2018 18:50:20.
-[18:50:20]: Threshold = 1000, Average = 1471,53333333333 bytes.
-[18:50:22]: High traffic generated an alert - hits = 16, triggered at 27/03/2018 18:50:22.
-[18:50:22]: Threshold = 1000, Average = 1484,875 bytes.
-[18:50:24]: Most visited websites since last check:
-Website: http://www.quora.com
-Sections:
-http://www.quora.com/pub
-[18:50:24]: High traffic generated an alert - hits = 17, triggered at 27/03/2018 18:50:24.
-[18:50:24]: Threshold = 1000, Average = 1469,52941176471 bytes.
-[18:50:26]: High traffic generated an alert - hits = 18, triggered at 27/03/2018 18:50:26.
-[18:50:26]: Threshold = 1000, Average = 1445,88888888889 bytes.
-[18:50:28]: High traffic generated an alert - hits = 19, triggered at 27/03/2018 18:50:28.
-[18:50:28]: Threshold = 1000, Average = 1456 bytes.
-[18:50:30]: High traffic generated an alert - hits = 20, triggered at 27/03/2018 18:50:30.
-[18:50:30]: Threshold = 1000, Average = 1464,65 bytes.
-[18:50:32]: High traffic generated an alert - hits = 21, triggered at 27/03/2018 18:50:32.
-[18:50:32]: Threshold = 1000, Average = 1449,42857142857 bytes.
-[18:50:34]: High traffic generated an alert - hits = 22, triggered at 27/03/2018 18:50:34.
-[18:50:34]: Threshold = 1000, Average = 1433,04545454545 bytes.
-[18:50:36]: High traffic generated an alert - hits = 23, triggered at 27/03/2018 18:50:36.
-[18:50:36]: Threshold = 1000, Average = 1431,17391304348 bytes.
-[18:50:38]: High traffic generated an alert - hits = 24, triggered at 27/03/2018 18:50:38.
-[18:50:38]: Threshold = 1000, Average = 1430,75 bytes.
-[18:50:40]: High traffic generated an alert - hits = 25, triggered at 27/03/2018 18:50:40.
-[18:50:40]: Threshold = 1000, Average = 1429,6 bytes.
-[18:50:42]: High traffic generated an alert - hits = 26, triggered at 27/03/2018 18:50:42.
-[18:50:42]: Threshold = 1000, Average = 1414,92307692308 bytes.
-[18:50:44]: High traffic generated an alert - hits = 27, triggered at 27/03/2018 18:50:44.
-[18:50:44]: Threshold = 1000, Average = 1415,18518518519 bytes.
-[18:50:46]: High traffic generated an alert - hits = 28, triggered at 27/03/2018 18:50:46.
-[18:50:46]: Threshold = 1000, Average = 1418 bytes.
-[18:50:48]: High traffic generated an alert - hits = 29, triggered at 27/03/2018 18:50:48.
-[18:50:48]: Threshold = 1000, Average = 1430,96551724138 bytes.
-[18:50:50]: High traffic generated an alert - hits = 30, triggered at 27/03/2018 18:50:50.
-[18:50:50]: Threshold = 1000, Average = 1425,06666666667 bytes.
-[18:50:52]: High traffic generated an alert - hits = 31, triggered at 27/03/2018 18:50:52.
-[18:50:52]: Threshold = 1000, Average = 1427,03225806452 bytes.
-[18:50:54]: Most visited websites since last check:
+[19:08:12]: Log Monitoring Started.
+[19:08:43]: No logs detected for the past 30 seconds.
+[19:09:13]: No websites have been visited
+[19:09:13]: No logs detected for the past 30 seconds.
+[19:09:43]: No logs detected for the past 30 seconds.
+[19:10:13]: No websites have been visited
+[19:10:13]: No logs detected for the past 30 seconds.
+[19:10:15]: High traffic generated an alert - hits = 1, triggered at 27/03/2018 19:10:15.
+[19:10:15]: Threshold = 1000, Average = 1212 bytes.
+[19:10:17]: High traffic generated an alert - hits = 2, triggered at 27/03/2018 19:10:17.
+[19:10:17]: Threshold = 1000, Average = 1281 bytes.
+[19:10:19]: High traffic generated an alert - hits = 3, triggered at 27/03/2018 19:10:19.
+[19:10:19]: Threshold = 1000, Average = 1342,33333333333 bytes.
+[19:10:21]: High traffic generated an alert - hits = 4, triggered at 27/03/2018 19:10:21.
+[19:10:21]: Threshold = 1000, Average = 1291,25 bytes.
+[19:10:23]: High traffic generated an alert - hits = 5, triggered at 27/03/2018 19:10:23.
+[19:10:23]: Threshold = 1000, Average = 1306,2 bytes.
+[19:10:25]: High traffic generated an alert - hits = 6, triggered at 27/03/2018 19:10:25.
+[19:10:25]: Threshold = 1000, Average = 1349,83333333333 bytes.
+[19:10:27]: High traffic generated an alert - hits = 7, triggered at 27/03/2018 19:10:27.
+[19:10:27]: Threshold = 1000, Average = 1309,42857142857 bytes.
+[19:10:29]: High traffic generated an alert - hits = 8, triggered at 27/03/2018 19:10:29.
+[19:10:29]: Threshold = 1000, Average = 1316,5 bytes.
+[19:10:31]: High traffic generated an alert - hits = 9, triggered at 27/03/2018 19:10:31.
+[19:10:31]: Threshold = 1000, Average = 1330,77777777778 bytes.
+[19:10:33]: High traffic generated an alert - hits = 10, triggered at 27/03/2018 19:10:33.
+[19:10:33]: Threshold = 1000, Average = 1339,2 bytes.
+[19:10:35]: High traffic generated an alert - hits = 11, triggered at 27/03/2018 19:10:35.
+[19:10:35]: Threshold = 1000, Average = 1391,72727272727 bytes.
+[19:10:37]: High traffic generated an alert - hits = 12, triggered at 27/03/2018 19:10:37.
+[19:10:37]: Threshold = 1000, Average = 1381,66666666667 bytes.
+[19:10:39]: High traffic generated an alert - hits = 13, triggered at 27/03/2018 19:10:39.
+[19:10:39]: Threshold = 1000, Average = 1367,84615384615 bytes.
+[19:10:41]: High traffic generated an alert - hits = 14, triggered at 27/03/2018 19:10:41.
+[19:10:41]: Threshold = 1000, Average = 1395,21428571429 bytes.
+[19:10:43]: Most visited websites since last check:
 Website: http://www.facebook.com
 Sections:
 http://www.facebook.com/pub
-[18:50:54]: Websites visited since monitoring started:
-http://www.quora.com - 12 time(s)
-http://www.facebook.com - 10 time(s)
-http://www.datadog.com - 6 time(s)
-http://www.google.com - 4 time(s)
-[18:50:54]: High traffic generated an alert - hits = 32, triggered at 27/03/2018 18:50:54.
-[18:50:54]: Threshold = 1000, Average = 1433 bytes.
-[18:50:56]: High traffic generated an alert - hits = 33, triggered at 27/03/2018 18:50:56.
-[18:50:56]: Threshold = 1000, Average = 1434,69696969697 bytes.
-[18:50:58]: High traffic generated an alert - hits = 34, triggered at 27/03/2018 18:50:58.
-[18:50:58]: Threshold = 1000, Average = 1437,85294117647 bytes.
-[18:51:00]: High traffic generated an alert - hits = 35, triggered at 27/03/2018 18:51:00.
-[18:51:00]: Threshold = 1000, Average = 1437,45714285714 bytes.
-[18:51:02]: High traffic generated an alert - hits = 36, triggered at 27/03/2018 18:51:02.
-[18:51:02]: Threshold = 1000, Average = 1449 bytes.
-[18:51:04]: High traffic generated an alert - hits = 37, triggered at 27/03/2018 18:51:04.
-[18:51:04]: Threshold = 1000, Average = 1458,78378378378 bytes.
-[18:51:06]: High traffic generated an alert - hits = 38, triggered at 27/03/2018 18:51:06.
-[18:51:06]: Threshold = 1000, Average = 1461,36842105263 bytes.
-[18:51:08]: High traffic generated an alert - hits = 39, triggered at 27/03/2018 18:51:08.
-[18:51:08]: Threshold = 1000, Average = 1471,17948717949 bytes.
-[18:51:10]: High traffic generated an alert - hits = 40, triggered at 27/03/2018 18:51:10.
-[18:51:10]: Threshold = 1000, Average = 1477,7 bytes.
-[18:51:12]: High traffic generated an alert - hits = 41, triggered at 27/03/2018 18:51:12.
-[18:51:12]: Threshold = 1000, Average = 1476,48780487805 bytes.
-[18:51:14]: High traffic generated an alert - hits = 42, triggered at 27/03/2018 18:51:14.
-[18:51:14]: Threshold = 1000, Average = 1470 bytes.
-[18:51:16]: High traffic generated an alert - hits = 43, triggered at 27/03/2018 18:51:16.
-[18:51:16]: Threshold = 1000, Average = 1476,11627906977 bytes.
-[18:51:18]: High traffic generated an alert - hits = 44, triggered at 27/03/2018 18:51:18.
-[18:51:18]: Threshold = 1000, Average = 1477,11363636364 bytes.
-[18:51:20]: High traffic generated an alert - hits = 45, triggered at 27/03/2018 18:51:20.
-[18:51:20]: Threshold = 1000, Average = 1474,44444444444 bytes.
-[18:51:22]: High traffic generated an alert - hits = 46, triggered at 27/03/2018 18:51:22.
-[18:51:22]: Threshold = 1000, Average = 1471,78260869565 bytes.
-[18:51:24]: Most visited websites since last check:
+[19:10:43]: High traffic generated an alert - hits = 15, triggered at 27/03/2018 19:10:43.
+[19:10:43]: Threshold = 1000, Average = 1392,93333333333 bytes.
+[19:10:45]: High traffic generated an alert - hits = 16, triggered at 27/03/2018 19:10:45.
+[19:10:45]: Threshold = 1000, Average = 1368,625 bytes.
+[19:10:47]: High traffic generated an alert - hits = 17, triggered at 27/03/2018 19:10:47.
+[19:10:47]: Threshold = 1000, Average = 1347,52941176471 bytes.
+[19:10:49]: High traffic generated an alert - hits = 18, triggered at 27/03/2018 19:10:49.
+[19:10:49]: Threshold = 1000, Average = 1342,72222222222 bytes.
+[19:10:51]: High traffic generated an alert - hits = 19, triggered at 27/03/2018 19:10:51.
+[19:10:51]: Threshold = 1000, Average = 1370,94736842105 bytes.
+[19:10:53]: High traffic generated an alert - hits = 20, triggered at 27/03/2018 19:10:53.
+[19:10:53]: Threshold = 1000, Average = 1388,4 bytes.
+[19:10:55]: High traffic generated an alert - hits = 21, triggered at 27/03/2018 19:10:55.
+[19:10:55]: Threshold = 1000, Average = 1389,52380952381 bytes.
+[19:10:57]: High traffic generated an alert - hits = 22, triggered at 27/03/2018 19:10:57.
+[19:10:57]: Threshold = 1000, Average = 1377,27272727273 bytes.
+[19:10:59]: High traffic generated an alert - hits = 23, triggered at 27/03/2018 19:10:59.
+[19:10:59]: Threshold = 1000, Average = 1391,08695652174 bytes.
+[19:11:01]: High traffic generated an alert - hits = 24, triggered at 27/03/2018 19:11:01.
+[19:11:01]: Threshold = 1000, Average = 1407,375 bytes.
+[19:11:03]: High traffic generated an alert - hits = 25, triggered at 27/03/2018 19:11:03.
+[19:11:03]: Threshold = 1000, Average = 1402,12 bytes.
+[19:11:05]: High traffic generated an alert - hits = 26, triggered at 27/03/2018 19:11:05.
+[19:11:05]: Threshold = 1000, Average = 1403,61538461538 bytes.
+[19:11:07]: High traffic generated an alert - hits = 27, triggered at 27/03/2018 19:11:07.
+[19:11:07]: Threshold = 1000, Average = 1422,77777777778 bytes.
+[19:11:09]: High traffic generated an alert - hits = 28, triggered at 27/03/2018 19:11:09.
+[19:11:09]: Threshold = 1000, Average = 1438,71428571429 bytes.
+[19:11:11]: High traffic generated an alert - hits = 29, triggered at 27/03/2018 19:11:11.
+[19:11:11]: Threshold = 1000, Average = 1436,06896551724 bytes.
+[19:11:13]: Websites visited since monitoring started:
+http://www.facebook.com - 12 time(s)
+http://www.quora.com - 11 time(s)
+http://www.google.com - 5 time(s)
+http://www.datadog.com - 2 time(s)
+Host who generated the most traffic: 127.0.0.1 - 30 hits
+[19:11:13]: Most visited websites since last check:
 Website: http://www.quora.com
 Sections:
 http://www.quora.com/pub
-[18:51:24]: High traffic generated an alert - hits = 47, triggered at 27/03/2018 18:51:24.
-[18:51:24]: Threshold = 1000, Average = 1478,91489361702 bytes.
-[18:51:26]: High traffic generated an alert - hits = 48, triggered at 27/03/2018 18:51:26.
-[18:51:26]: Threshold = 1000, Average = 1485,79166666667 bytes.
-[18:51:28]: High traffic generated an alert - hits = 49, triggered at 27/03/2018 18:51:28.
-[18:51:28]: Threshold = 1000, Average = 1490,04081632653 bytes.
-[18:51:30]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 18:51:30.
-[18:51:30]: Threshold = 1000, Average = 1486,56 bytes.
-[18:51:32]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 18:51:32.
-[18:51:32]: Threshold = 1000, Average = 1486,56 bytes.
-[18:51:34]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 18:51:34.
-[18:51:34]: Threshold = 1000, Average = 1486,56 bytes.
-[18:51:36]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 18:51:36.
-[18:51:36]: Threshold = 1000, Average = 1486,56 bytes.
-[18:51:38]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 18:51:38.
-[18:51:38]: Threshold = 1000, Average = 1486,56 bytes.
-[18:51:40]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 18:51:40.
-[18:51:40]: Threshold = 1000, Average = 1486,56 bytes.
-[18:51:42]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 18:51:42.
-[18:51:42]: Threshold = 1000, Average = 1486,56 bytes.
-[18:51:44]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 18:51:44.
-[18:51:44]: Threshold = 1000, Average = 1486,56 bytes.
-[18:51:46]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 18:51:46.
-[18:51:46]: Threshold = 1000, Average = 1486,56 bytes.
-[18:51:48]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 18:51:48.
-[18:51:48]: Threshold = 1000, Average = 1486,56 bytes.
-[18:51:50]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 18:51:50.
-[18:51:50]: Threshold = 1000, Average = 1486,56 bytes.
-[18:51:52]: High traffic generated an alert - hits = 49, triggered at 27/03/2018 18:51:52.
-[18:51:52]: Threshold = 1000, Average = 1496,34693877551 bytes.
-[18:51:54]: Most visited websites since last check:
 Website: http://www.facebook.com
 Sections:
 http://www.facebook.com/pub
+[19:11:13]: High traffic generated an alert - hits = 30, triggered at 27/03/2018 19:11:13.
+[19:11:13]: Threshold = 1000, Average = 1446,56666666667 bytes.
+[19:11:15]: High traffic generated an alert - hits = 31, triggered at 27/03/2018 19:11:15.
+[19:11:15]: Threshold = 1000, Average = 1460,03225806452 bytes.
+[19:11:17]: High traffic generated an alert - hits = 32, triggered at 27/03/2018 19:11:17.
+[19:11:17]: Threshold = 1000, Average = 1453,09375 bytes.
+[19:11:19]: High traffic generated an alert - hits = 33, triggered at 27/03/2018 19:11:19.
+[19:11:19]: Threshold = 1000, Average = 1452,81818181818 bytes.
+[19:11:21]: High traffic generated an alert - hits = 34, triggered at 27/03/2018 19:11:21.
+[19:11:21]: Threshold = 1000, Average = 1457,44117647059 bytes.
+[19:11:23]: High traffic generated an alert - hits = 35, triggered at 27/03/2018 19:11:23.
+[19:11:23]: Threshold = 1000, Average = 1446,4 bytes.
+[19:11:25]: High traffic generated an alert - hits = 36, triggered at 27/03/2018 19:11:25.
+[19:11:25]: Threshold = 1000, Average = 1439,55555555556 bytes.
+[19:11:27]: High traffic generated an alert - hits = 37, triggered at 27/03/2018 19:11:27.
+[19:11:27]: Threshold = 1000, Average = 1432,13513513514 bytes.
+[19:11:29]: High traffic generated an alert - hits = 38, triggered at 27/03/2018 19:11:29.
+[19:11:29]: Threshold = 1000, Average = 1438,42105263158 bytes.
+[19:11:31]: High traffic generated an alert - hits = 39, triggered at 27/03/2018 19:11:31.
+[19:11:31]: Threshold = 1000, Average = 1438,74358974359 bytes.
+[19:11:33]: High traffic generated an alert - hits = 40, triggered at 27/03/2018 19:11:33.
+[19:11:33]: Threshold = 1000, Average = 1435,75 bytes.
+[19:11:35]: High traffic generated an alert - hits = 41, triggered at 27/03/2018 19:11:35.
+[19:11:35]: Threshold = 1000, Average = 1439,07317073171 bytes.
+[19:11:37]: High traffic generated an alert - hits = 42, triggered at 27/03/2018 19:11:37.
+[19:11:37]: Threshold = 1000, Average = 1442,2619047619 bytes.
+[19:11:39]: High traffic generated an alert - hits = 43, triggered at 27/03/2018 19:11:39.
+[19:11:39]: Threshold = 1000, Average = 1453,53488372093 bytes.
+[19:11:41]: High traffic generated an alert - hits = 44, triggered at 27/03/2018 19:11:41.
+[19:11:41]: Threshold = 1000, Average = 1456,13636363636 bytes.
+[19:11:43]: Most visited websites since last check:
 Website: http://www.quora.com
 Sections:
 http://www.quora.com/pub
-Website: http://www.google.com
+[19:11:43]: High traffic generated an alert - hits = 45, triggered at 27/03/2018 19:11:43.
+[19:11:43]: Threshold = 1000, Average = 1455,31111111111 bytes.
+[19:11:45]: High traffic generated an alert - hits = 46, triggered at 27/03/2018 19:11:45.
+[19:11:45]: Threshold = 1000, Average = 1446,86956521739 bytes.
+[19:11:47]: High traffic generated an alert - hits = 47, triggered at 27/03/2018 19:11:47.
+[19:11:47]: Threshold = 1000, Average = 1454,82978723404 bytes.
+[19:11:49]: High traffic generated an alert - hits = 48, triggered at 27/03/2018 19:11:49.
+[19:11:49]: Threshold = 1000, Average = 1446,64583333333 bytes.
+[19:11:51]: High traffic generated an alert - hits = 49, triggered at 27/03/2018 19:11:51.
+[19:11:51]: Threshold = 1000, Average = 1440,97959183673 bytes.
+[19:11:53]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 19:11:53.
+[19:11:53]: Threshold = 1000, Average = 1433,72 bytes.
+[19:11:55]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 19:11:55.
+[19:11:55]: Threshold = 1000, Average = 1433,72 bytes.
+[19:11:57]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 19:11:57.
+[19:11:57]: Threshold = 1000, Average = 1433,72 bytes.
+[19:11:59]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 19:11:59.
+[19:11:59]: Threshold = 1000, Average = 1433,72 bytes.
+[19:12:01]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 19:12:01.
+[19:12:01]: Threshold = 1000, Average = 1433,72 bytes.
+[19:12:03]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 19:12:03.
+[19:12:03]: Threshold = 1000, Average = 1433,72 bytes.
+[19:12:05]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 19:12:05.
+[19:12:05]: Threshold = 1000, Average = 1433,72 bytes.
+[19:12:07]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 19:12:07.
+[19:12:07]: Threshold = 1000, Average = 1433,72 bytes.
+[19:12:09]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 19:12:09.
+[19:12:09]: Threshold = 1000, Average = 1433,72 bytes.
+[19:12:11]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 19:12:11.
+[19:12:11]: Threshold = 1000, Average = 1433,72 bytes.
+[19:12:13]: Websites visited since monitoring started:
+http://www.facebook.com - 21 time(s)
+http://www.quora.com - 17 time(s)
+http://www.google.com - 10 time(s)
+http://www.datadog.com - 2 time(s)
+Host who generated the most traffic: 127.0.0.1 - 50 hits
+[19:12:13]: Most visited websites since last check:
+Website: http://www.facebook.com
 Sections:
-http://www.google.com/pub
-[18:51:54]: Websites visited since monitoring started:
-http://www.quora.com - 21 time(s)
-http://www.facebook.com - 14 time(s)
-http://www.google.com - 9 time(s)
-http://www.datadog.com - 6 time(s)
-[18:51:54]: High traffic generated an alert - hits = 48, triggered at 27/03/2018 18:51:54.
-[18:51:54]: Threshold = 1000, Average = 1490,5 bytes.
-[18:51:56]: High traffic generated an alert - hits = 47, triggered at 27/03/2018 18:51:56.
-[18:51:56]: Threshold = 1000, Average = 1495,31914893617 bytes.
-[18:51:58]: High traffic generated an alert - hits = 46, triggered at 27/03/2018 18:51:58.
-[18:51:58]: Threshold = 1000, Average = 1497,9347826087 bytes.
-[18:52:00]: High traffic generated an alert - hits = 45, triggered at 27/03/2018 18:52:00.
-[18:52:00]: Threshold = 1000, Average = 1505,42222222222 bytes.
-[18:52:02]: High traffic generated an alert - hits = 44, triggered at 27/03/2018 18:52:02.
-[18:52:02]: Threshold = 1000, Average = 1507,27272727273 bytes.
-[18:52:04]: High traffic generated an alert - hits = 43, triggered at 27/03/2018 18:52:04.
-[18:52:04]: Threshold = 1000, Average = 1505,25581395349 bytes.
-[18:52:06]: High traffic generated an alert - hits = 42, triggered at 27/03/2018 18:52:06.
-[18:52:06]: Threshold = 1000, Average = 1511,11904761905 bytes.
-[18:52:08]: High traffic generated an alert - hits = 41, triggered at 27/03/2018 18:52:08.
-[18:52:08]: Threshold = 1000, Average = 1503,92682926829 bytes.
-[18:52:10]: High traffic generated an alert - hits = 40, triggered at 27/03/2018 18:52:10.
-[18:52:10]: Threshold = 1000, Average = 1503,075 bytes.
-[18:52:12]: High traffic generated an alert - hits = 39, triggered at 27/03/2018 18:52:12.
-[18:52:12]: Threshold = 1000, Average = 1494,15384615385 bytes.
-[18:52:14]: High traffic generated an alert - hits = 38, triggered at 27/03/2018 18:52:14.
-[18:52:14]: Threshold = 1000, Average = 1492,47368421053 bytes.
-[18:52:16]: High traffic generated an alert - hits = 37, triggered at 27/03/2018 18:52:16.
-[18:52:16]: Threshold = 1000, Average = 1482,56756756757 bytes.
-[18:52:18]: High traffic generated an alert - hits = 36, triggered at 27/03/2018 18:52:18.
-[18:52:18]: Threshold = 1000, Average = 1489,88888888889 bytes.
-[18:52:20]: High traffic generated an alert - hits = 35, triggered at 27/03/2018 18:52:20.
-[18:52:20]: Threshold = 1000, Average = 1493 bytes.
-[18:52:22]: High traffic generated an alert - hits = 34, triggered at 27/03/2018 18:52:22.
-[18:52:22]: Threshold = 1000, Average = 1487,35294117647 bytes.
-[18:52:24]: No logs detected for the past 30 seconds.
-[18:52:24]: High traffic generated an alert - hits = 33, triggered at 27/03/2018 18:52:24.
-[18:52:24]: Threshold = 1000, Average = 1495,33333333333 bytes.
-[18:52:26]: High traffic generated an alert - hits = 32, triggered at 27/03/2018 18:52:26.
-[18:52:26]: Threshold = 1000, Average = 1509,4375 bytes.
-[18:52:28]: High traffic generated an alert - hits = 31, triggered at 27/03/2018 18:52:28.
-[18:52:28]: Threshold = 1000, Average = 1505,29032258065 bytes.
-[18:52:30]: High traffic generated an alert - hits = 30, triggered at 27/03/2018 18:52:30.
-[18:52:30]: Threshold = 1000, Average = 1501,16666666667 bytes.
-[18:52:32]: High traffic generated an alert - hits = 29, triggered at 27/03/2018 18:52:32.
-[18:52:32]: Threshold = 1000, Average = 1513,44827586207 bytes.
-[18:52:34]: High traffic generated an alert - hits = 28, triggered at 27/03/2018 18:52:34.
-[18:52:34]: Threshold = 1000, Average = 1528,60714285714 bytes.
-[18:52:36]: High traffic generated an alert - hits = 27, triggered at 27/03/2018 18:52:36.
-[18:52:36]: Threshold = 1000, Average = 1533,74074074074 bytes.
-[18:52:38]: High traffic generated an alert - hits = 26, triggered at 27/03/2018 18:52:38.
-[18:52:38]: Threshold = 1000, Average = 1538,07692307692 bytes.
-[18:52:40]: High traffic generated an alert - hits = 25, triggered at 27/03/2018 18:52:40.
-[18:52:40]: Threshold = 1000, Average = 1543,52 bytes.
-[18:52:42]: High traffic generated an alert - hits = 24, triggered at 27/03/2018 18:52:42.
-[18:52:42]: Threshold = 1000, Average = 1564,16666666667 bytes.
-[18:52:44]: High traffic generated an alert - hits = 23, triggered at 27/03/2018 18:52:44.
-[18:52:44]: Threshold = 1000, Average = 1570,34782608696 bytes.
-[18:52:46]: High traffic generated an alert - hits = 22, triggered at 27/03/2018 18:52:46.
-[18:52:46]: Threshold = 1000, Average = 1573,81818181818 bytes.
-[18:52:48]: High traffic generated an alert - hits = 21, triggered at 27/03/2018 18:52:48.
-[18:52:48]: Threshold = 1000, Average = 1563,33333333333 bytes.
-[18:52:50]: High traffic generated an alert - hits = 20, triggered at 27/03/2018 18:52:50.
-[18:52:50]: Threshold = 1000, Average = 1578,8 bytes.
-[18:52:52]: High traffic generated an alert - hits = 19, triggered at 27/03/2018 18:52:52.
-[18:52:52]: Threshold = 1000, Average = 1583,68421052632 bytes.
-[18:52:54]: Websites visited since monitoring started:
-http://www.quora.com - 21 time(s)
-http://www.facebook.com - 14 time(s)
-http://www.google.com - 9 time(s)
-http://www.datadog.com - 6 time(s)
-[18:52:54]: No logs detected for the past 30 seconds.
-[18:52:54]: High traffic generated an alert - hits = 18, triggered at 27/03/2018 18:52:54.
-[18:52:54]: Threshold = 1000, Average = 1581,77777777778 bytes.
-[18:52:56]: High traffic generated an alert - hits = 17, triggered at 27/03/2018 18:52:56.
-[18:52:56]: Threshold = 1000, Average = 1587,23529411765 bytes.
-[18:52:58]: High traffic generated an alert - hits = 16, triggered at 27/03/2018 18:52:58.
-[18:52:58]: Threshold = 1000, Average = 1590,0625 bytes.
-[18:53:00]: High traffic generated an alert - hits = 15, triggered at 27/03/2018 18:53:00.
-[18:53:00]: Threshold = 1000, Average = 1601,13333333333 bytes.
-[18:53:02]: High traffic generated an alert - hits = 14, triggered at 27/03/2018 18:53:02.
-[18:53:02]: Threshold = 1000, Average = 1583,14285714286 bytes.
-[18:53:04]: High traffic generated an alert - hits = 13, triggered at 27/03/2018 18:53:04.
-[18:53:04]: Threshold = 1000, Average = 1565,61538461538 bytes.
-[18:53:06]: High traffic generated an alert - hits = 12, triggered at 27/03/2018 18:53:06.
-[18:53:06]: Threshold = 1000, Average = 1566,33333333333 bytes.
-[18:53:08]: High traffic generated an alert - hits = 11, triggered at 27/03/2018 18:53:08.
-[18:53:08]: Threshold = 1000, Average = 1541,09090909091 bytes.
-[18:53:10]: High traffic generated an alert - hits = 10, triggered at 27/03/2018 18:53:10.
-[18:53:10]: Threshold = 1000, Average = 1522 bytes.
-[18:53:12]: High traffic generated an alert - hits = 9, triggered at 27/03/2018 18:53:12.
-[18:53:12]: Threshold = 1000, Average = 1532,44444444444 bytes.
-[18:53:14]: High traffic generated an alert - hits = 8, triggered at 27/03/2018 18:53:14.
-[18:53:14]: Threshold = 1000, Average = 1573,5 bytes.
-[18:53:16]: High traffic generated an alert - hits = 7, triggered at 27/03/2018 18:53:16.
-[18:53:16]: Threshold = 1000, Average = 1550,71428571429 bytes.
-[18:53:18]: High traffic generated an alert - hits = 6, triggered at 27/03/2018 18:53:18.
-[18:53:18]: Threshold = 1000, Average = 1555,83333333333 bytes.
-[18:53:20]: High traffic generated an alert - hits = 5, triggered at 27/03/2018 18:53:20.
-[18:53:20]: Threshold = 1000, Average = 1595,6 bytes.
-[18:53:22]: High traffic generated an alert - hits = 4, triggered at 27/03/2018 18:53:22.
-[18:53:22]: Threshold = 1000, Average = 1656,5 bytes.
-[18:53:24]: No logs detected for the past 30 seconds.
-[18:53:24]: High traffic generated an alert - hits = 3, triggered at 27/03/2018 18:53:24.
-[18:53:24]: Threshold = 1000, Average = 1606,33333333333 bytes.
-[18:53:26]: High traffic generated an alert - hits = 2, triggered at 27/03/2018 18:53:26.
-[18:53:26]: Threshold = 1000, Average = 1505 bytes.
-[18:53:28]: High traffic generated an alert - hits = 1, triggered at 27/03/2018 18:53:28.
-[18:53:28]: Threshold = 1000, Average = 1316 bytes.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:49:52.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:49:54.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:49:56.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:49:58.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:00.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:02.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:04.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:06.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:08.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:10.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:12.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:14.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:16.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:18.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:20.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:22.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:24.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:26.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:28.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:30.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:32.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:34.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:36.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:38.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:40.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:42.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:44.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:46.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:48.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:50.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:52.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:54.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:56.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:50:58.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:00.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:02.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:04.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:06.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:08.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:10.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:12.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:14.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:16.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:18.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:20.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:22.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:24.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:26.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:28.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:30.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:32.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:34.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:36.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:38.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:40.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:42.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:44.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:46.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:48.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:50.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:52.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:54.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:56.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:51:58.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:00.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:02.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:04.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:06.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:08.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:10.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:12.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:14.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:16.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:18.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:20.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:22.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:24.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:26.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:28.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:30.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:32.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:34.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:36.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:38.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:40.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:42.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:44.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:46.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:48.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:50.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:52.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:54.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:56.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:52:58.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:53:00.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:53:02.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:53:04.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:53:06.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:53:08.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:53:10.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:53:12.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:53:14.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:53:16.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:53:18.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:53:20.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:53:22.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:53:24.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:53:26.
-[18:53:30]: Recovered from alert triggered at 27/03/2018 18:53:28.
+http://www.facebook.com/pub
+[19:12:13]: High traffic generated an alert - hits = 50, triggered at 27/03/2018 19:12:13.
+[19:12:13]: Threshold = 1000, Average = 1433,72 bytes.
+[19:12:15]: High traffic generated an alert - hits = 49, triggered at 27/03/2018 19:12:15.
+[19:12:15]: Threshold = 1000, Average = 1438,24489795918 bytes.
+[19:12:17]: High traffic generated an alert - hits = 48, triggered at 27/03/2018 19:12:17.
+[19:12:17]: Threshold = 1000, Average = 1440,08333333333 bytes.
+[19:12:19]: High traffic generated an alert - hits = 47, triggered at 27/03/2018 19:12:19.
+[19:12:19]: Threshold = 1000, Average = 1439,55319148936 bytes.
+[19:12:21]: High traffic generated an alert - hits = 46, triggered at 27/03/2018 19:12:21.
+[19:12:21]: Threshold = 1000, Average = 1446,10869565217 bytes.
+[19:12:23]: High traffic generated an alert - hits = 45, triggered at 27/03/2018 19:12:23.
+[19:12:23]: Threshold = 1000, Average = 1447,88888888889 bytes.
+[19:12:25]: High traffic generated an alert - hits = 44, triggered at 27/03/2018 19:12:25.
+[19:12:25]: Threshold = 1000, Average = 1445,15909090909 bytes.
+[19:12:27]: High traffic generated an alert - hits = 43, triggered at 27/03/2018 19:12:27.
+[19:12:27]: Threshold = 1000, Average = 1453,95348837209 bytes.
+[19:12:29]: High traffic generated an alert - hits = 42, triggered at 27/03/2018 19:12:29.
+[19:12:29]: Threshold = 1000, Average = 1456,04761904762 bytes.
+[19:12:31]: High traffic generated an alert - hits = 41, triggered at 27/03/2018 19:12:31.
+[19:12:31]: Threshold = 1000, Average = 1456,31707317073 bytes.
+[19:12:33]: High traffic generated an alert - hits = 40, triggered at 27/03/2018 19:12:33.
+[19:12:33]: Threshold = 1000, Average = 1457,35 bytes.
+[19:12:35]: High traffic generated an alert - hits = 39, triggered at 27/03/2018 19:12:35.
+[19:12:35]: Threshold = 1000, Average = 1445,5641025641 bytes.
+[19:12:37]: High traffic generated an alert - hits = 38, triggered at 27/03/2018 19:12:37.
+[19:12:37]: Threshold = 1000, Average = 1450,15789473684 bytes.
+[19:12:39]: High traffic generated an alert - hits = 37, triggered at 27/03/2018 19:12:39.
+[19:12:39]: Threshold = 1000, Average = 1456,86486486486 bytes.
+[19:12:41]: High traffic generated an alert - hits = 36, triggered at 27/03/2018 19:12:41.
+[19:12:41]: Threshold = 1000, Average = 1448,69444444444 bytes.
+[19:12:43]: No logs detected for the past 30 seconds.
+[19:12:43]: High traffic generated an alert - hits = 35, triggered at 27/03/2018 19:12:43.
+[19:12:43]: Threshold = 1000, Average = 1451,2 bytes.
+[19:12:45]: High traffic generated an alert - hits = 34, triggered at 27/03/2018 19:12:45.
+[19:12:45]: Threshold = 1000, Average = 1464,35294117647 bytes.
+[19:12:47]: High traffic generated an alert - hits = 33, triggered at 27/03/2018 19:12:47.
+[19:12:47]: Threshold = 1000, Average = 1478,12121212121 bytes.
+[19:12:49]: High traffic generated an alert - hits = 32, triggered at 27/03/2018 19:12:49.
+[19:12:49]: Threshold = 1000, Average = 1484,90625 bytes.
+[19:12:51]: High traffic generated an alert - hits = 31, triggered at 27/03/2018 19:12:51.
+[19:12:51]: Threshold = 1000, Average = 1472,1935483871 bytes.
+[19:12:53]: High traffic generated an alert - hits = 30, triggered at 27/03/2018 19:12:53.
+[19:12:53]: Threshold = 1000, Average = 1463,93333333333 bytes.
+[19:12:55]: High traffic generated an alert - hits = 29, triggered at 27/03/2018 19:12:55.
+[19:12:55]: Threshold = 1000, Average = 1465,72413793103 bytes.
+[19:12:57]: High traffic generated an alert - hits = 28, triggered at 27/03/2018 19:12:57.
+[19:12:57]: Threshold = 1000, Average = 1478,07142857143 bytes.
+[19:12:59]: High traffic generated an alert - hits = 27, triggered at 27/03/2018 19:12:59.
+[19:12:59]: Threshold = 1000, Average = 1470,03703703704 bytes.
+[19:13:01]: High traffic generated an alert - hits = 26, triggered at 27/03/2018 19:13:01.
+[19:13:01]: Threshold = 1000, Average = 1458,03846153846 bytes.
+[19:13:03]: High traffic generated an alert - hits = 25, triggered at 27/03/2018 19:13:03.
+[19:13:03]: Threshold = 1000, Average = 1465,32 bytes.
+[19:13:05]: High traffic generated an alert - hits = 24, triggered at 27/03/2018 19:13:05.
+[19:13:05]: Threshold = 1000, Average = 1466,33333333333 bytes.
+[19:13:07]: High traffic generated an alert - hits = 23, triggered at 27/03/2018 19:13:07.
+[19:13:07]: Threshold = 1000, Average = 1446,5652173913 bytes.
+[19:13:09]: High traffic generated an alert - hits = 22, triggered at 27/03/2018 19:13:09.
+[19:13:09]: Threshold = 1000, Average = 1427,36363636364 bytes.
+[19:13:11]: High traffic generated an alert - hits = 21, triggered at 27/03/2018 19:13:11.
+[19:13:11]: Threshold = 1000, Average = 1430,47619047619 bytes.
+[19:13:13]: Websites visited since monitoring started:
+http://www.facebook.com - 21 time(s)
+http://www.quora.com - 17 time(s)
+http://www.google.com - 10 time(s)
+http://www.datadog.com - 2 time(s)
+Host who generated the most traffic: 127.0.0.1 - 50 hits
+[19:13:13]: No logs detected for the past 30 seconds.
+[19:13:13]: High traffic generated an alert - hits = 20, triggered at 27/03/2018 19:13:13.
+[19:13:13]: Threshold = 1000, Average = 1414,45 bytes.
+[19:13:15]: High traffic generated an alert - hits = 19, triggered at 27/03/2018 19:13:15.
+[19:13:15]: Threshold = 1000, Average = 1390,78947368421 bytes.
+[19:13:17]: High traffic generated an alert - hits = 18, triggered at 27/03/2018 19:13:17.
+[19:13:17]: Threshold = 1000, Average = 1399,27777777778 bytes.
+[19:13:19]: High traffic generated an alert - hits = 17, triggered at 27/03/2018 19:13:19.
+[19:13:19]: Threshold = 1000, Average = 1396,64705882353 bytes.
+[19:13:21]: High traffic generated an alert - hits = 16, triggered at 27/03/2018 19:13:21.
+[19:13:21]: Threshold = 1000, Average = 1383,3125 bytes.
+[19:13:23]: High traffic generated an alert - hits = 15, triggered at 27/03/2018 19:13:23.
+[19:13:23]: Threshold = 1000, Average = 1404,13333333333 bytes.
+[19:13:25]: High traffic generated an alert - hits = 14, triggered at 27/03/2018 19:13:25.
+[19:13:25]: Threshold = 1000, Average = 1418,71428571429 bytes.
+[19:13:27]: High traffic generated an alert - hits = 13, triggered at 27/03/2018 19:13:27.
+[19:13:27]: Threshold = 1000, Average = 1438,23076923077 bytes.
+[19:13:29]: High traffic generated an alert - hits = 12, triggered at 27/03/2018 19:13:29.
+[19:13:29]: Threshold = 1000, Average = 1418,83333333333 bytes.
+[19:13:31]: High traffic generated an alert - hits = 11, triggered at 27/03/2018 19:13:31.
+[19:13:31]: Threshold = 1000, Average = 1415,90909090909 bytes.
+[19:13:33]: High traffic generated an alert - hits = 10, triggered at 27/03/2018 19:13:33.
+[19:13:33]: Threshold = 1000, Average = 1425,6 bytes.
+[19:13:35]: High traffic generated an alert - hits = 9, triggered at 27/03/2018 19:13:35.
+[19:13:35]: Threshold = 1000, Average = 1409,33333333333 bytes.
+[19:13:37]: High traffic generated an alert - hits = 8, triggered at 27/03/2018 19:13:37.
+[19:13:37]: Threshold = 1000, Average = 1388,875 bytes.
+[19:13:39]: High traffic generated an alert - hits = 7, triggered at 27/03/2018 19:13:39.
+[19:13:39]: Threshold = 1000, Average = 1312 bytes.
+[19:13:41]: High traffic generated an alert - hits = 6, triggered at 27/03/2018 19:13:41.
+[19:13:41]: Threshold = 1000, Average = 1269,33333333333 bytes.
+[19:13:43]: No logs detected for the past 30 seconds.
+[19:13:43]: High traffic generated an alert - hits = 5, triggered at 27/03/2018 19:13:43.
+[19:13:43]: Threshold = 1000, Average = 1239,4 bytes.
+[19:13:45]: High traffic generated an alert - hits = 4, triggered at 27/03/2018 19:13:45.
+[19:13:45]: Threshold = 1000, Average = 1282,5 bytes.
+[19:13:47]: High traffic generated an alert - hits = 3, triggered at 27/03/2018 19:13:47.
+[19:13:47]: Threshold = 1000, Average = 1103 bytes.
+[19:13:49]: High traffic generated an alert - hits = 2, triggered at 27/03/2018 19:13:49.
+[19:13:49]: Threshold = 1000, Average = 1123,5 bytes.
+[19:13:51]: High traffic generated an alert - hits = 1, triggered at 27/03/2018 19:13:51.
+[19:13:51]: Threshold = 1000, Average = 1078 bytes.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:15.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:17.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:19.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:21.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:23.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:25.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:27.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:29.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:31.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:33.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:35.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:37.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:39.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:41.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:43.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:45.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:47.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:49.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:51.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:53.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:55.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:57.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:10:59.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:01.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:03.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:05.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:07.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:09.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:11.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:13.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:15.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:17.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:19.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:21.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:23.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:25.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:27.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:29.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:31.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:33.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:35.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:37.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:39.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:41.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:43.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:45.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:47.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:49.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:51.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:53.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:55.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:57.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:11:59.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:01.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:03.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:05.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:07.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:09.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:11.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:13.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:15.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:17.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:19.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:21.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:23.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:25.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:27.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:29.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:31.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:33.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:35.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:37.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:39.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:41.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:43.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:45.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:47.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:49.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:51.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:53.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:55.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:57.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:12:59.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:13:01.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:13:03.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:13:05.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:13:07.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:13:09.
+[19:13:53]: Recovered from alert triggered at 27/03/2018 19:13:11.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:13.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:15.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:17.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:19.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:21.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:23.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:25.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:27.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:29.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:31.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:33.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:35.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:37.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:39.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:41.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:43.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:45.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:47.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:49.
+[19:13:54]: Recovered from alert triggered at 27/03/2018 19:13:51.
+[19:14:13]: Websites visited since monitoring started:
+http://www.facebook.com - 21 time(s)
+http://www.quora.com - 17 time(s)
+http://www.google.com - 10 time(s)
+http://www.datadog.com - 2 time(s)
+Host who generated the most traffic: 127.0.0.1 - 50 hits
+[19:14:13]: No logs detected for the past 30 seconds.

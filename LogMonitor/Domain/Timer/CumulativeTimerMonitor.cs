@@ -2,7 +2,6 @@
 using LogMonitor.Domain.Notification.Interfaces;
 using LogMonitor.Utils;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using Utils;
 
@@ -24,8 +23,9 @@ namespace LogMonitor.Domain.Timer
             }
 
             var orderedHits = _pageHits.OrderByDescending(pair => pair.Value);
+            var host = _hosts.OrderByDescending(pair => pair.Value).First();
 
-            INotification notification = new CumulativeStatus(orderedHits);
+            INotification notification = new CumulativeStatus(orderedHits, host);
             printNotification(notification);
         }
     }

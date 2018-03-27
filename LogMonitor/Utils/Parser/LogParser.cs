@@ -56,6 +56,7 @@ namespace LogMonitor.Utils.Parser
             if (urlArgs.Length < 3)
                 return default(LineDTO);
 
+            var host = args[0];
             var webSite = string.Concat(urlArgs[0], "//", urlArgs[1]);
             var section = string.Concat(webSite, "/", urlArgs[2]);
 
@@ -67,7 +68,7 @@ namespace LogMonitor.Utils.Parser
             DateTimeOffset.TryParseExact($"{args[3]}{args[4]}", Constants.DATETIME_FORMAT, 
                 System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out dateTime);
 
-            return new LineDTO(webSite, section, size, dateTime);
+            return new LineDTO(host, webSite, section, size, dateTime);
         }
     }
 }

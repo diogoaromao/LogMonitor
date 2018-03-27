@@ -8,12 +8,14 @@ namespace LogMonitor.Domain.Timer
     {
         protected Dictionary<string, int> _pageHits;
         protected Dictionary<string, List<string>> _sections;
+        protected Dictionary<string, int> _hosts;
         protected bool _isCumulative;
 
         public StatusTimerMonitor(long time, string file, bool isCumulative) : base(time, time, file)
         {
             _pageHits = new Dictionary<string, int>();
             _sections = new Dictionary<string, List<string>>();
+            _hosts = new Dictionary<string, int>();
             _isCumulative = isCumulative;
         }
 
@@ -42,6 +44,8 @@ namespace LogMonitor.Domain.Timer
                 });
 
                 _pageHits.AddOrUpdate(line.Website, 1, (id, count) => count + 1);
+
+                _hosts.AddOrUpdate(line.Host, 1, (host, count) => count + 1);
             }
 
             printTopHits();
