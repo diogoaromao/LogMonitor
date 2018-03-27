@@ -18,6 +18,8 @@ Create a simple console program that monitors HTTP traffic on your machine:
 ```
 .\Build.ps1
 ```
+4. Navigate to the project's bin\Release folder
+5. Run
 ```
 .\LogMonitor.exe [-t threshold] -g
 ```
@@ -29,6 +31,8 @@ Create a simple console program that monitors HTTP traffic on your machine:
 ```
 .\Build.ps1
 ```
+4. Navigate to the project's bin\Release folder
+5. Run
 ```
 .\LogMonitor.exe [-t threshold] -f generated.txt
 ```
