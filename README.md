@@ -11,6 +11,23 @@ Create a simple console program that monitors HTTP traffic on your machine:
 * Write a test for the alerting logic
 * Explain how you’d improve on this application design
 
+## Nuget Restore Error ##
+If you get an error related with restoring nuget packages running one of the commands below, please do the following:
+1. Open Solution on Visual Studio
+2. Right-Click on the solution.
+3. Restore NuGet Packages.
+
+If by any chance the powerhsell commands below still don't work, please do the following:
+
+1. Open Solution on Visual Studio.
+2. Right-Click on the solution.
+3. Manage NuGet Packages for Solution.
+4. Select Updates tab
+5. Select all packages
+6. Update
+
+The powershell commands below should now work.
+
 ## Running the log generator ##
 1. Please make sure you have Visual Studio 2017 Community version installed on your computer.
 2. Open a Windows Powershell and navigate to the project Powershell folder.
@@ -61,3 +78,4 @@ Ex: .\LogMonitor.exe -t 1000 -f generated.txt
 8. Use dependency injection (Autofac).
 9. Possibility to set how frequently a timer runs and the timespan of the logs it's interested in.
 10. Statistic showing host which did the most requests.
+11. Powershell build command should also restore NuGet packages.
