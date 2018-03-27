@@ -76,5 +76,4 @@ Ex: .\LogMonitor.exe -t 1000 -f generated.txt
 6. Should be possible to generate a log file without the need to specify the threshold.
 7. Components like Notification, Timer and Logger should be testable.
 8. Use dependency injection (Autofac).
-9. Statistic showing host which did the most requests.
-10. Powershell build command should also restore NuGet packages.
+9. Powershell build command should also restore NuGet packages.
