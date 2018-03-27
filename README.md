@@ -67,6 +67,9 @@ Ex: .\LogMonitor.exe -t 1000 -f generated.txt
 .\Test.ps1
 ```
 
+## Stopping the execution ##
+To stop the execution at any time click Ctrl + C.
+
 ## Improvements ##
 1. Possibility to read from more than 1 log file at the same time.
 2. Arguments validation is not working properly. The user can input a log to monitor and ask to generate a log. Only the latter one will be done.
