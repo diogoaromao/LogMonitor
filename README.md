@@ -22,6 +22,7 @@ Create a simple console program that monitors HTTP traffic on your machine:
 5. Run
 ```
 .\LogMonitor.exe [-t threshold] -g
+Ex: .\LogMonitor.exe -t 1000 -g
 ```
 
 ## Running the monitor ##
@@ -35,6 +36,7 @@ Create a simple console program that monitors HTTP traffic on your machine:
 5. Run
 ```
 .\LogMonitor.exe [-t threshold] -f generated.txt
+Ex: .\LogMonitor.exe -t 1000 -f generated.txt
 ```
 
 ## Running tests ##
