@@ -18,7 +18,7 @@ namespace LogMonitor.Domain.Timer
             {
                 lock (GlobalLocks.WriteLock)
                 {
-                    _printer.Print($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: No logs detected for the past {_time / 1000} seconds.");
+                    _printer.Print(string.Format(Constants.NO_RECENT_VISITS, DateTime.Now, (_time / 1000)));
                 }
                 return;
             }

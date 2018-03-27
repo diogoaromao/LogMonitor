@@ -21,14 +21,14 @@ namespace LogMonitor.Domain.Notification
         {
             lock (GlobalLocks.WriteLock)
             {
-                _printer.Print($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: Websites visited since monitoring started:");
+                _printer.Print(string.Format(Constants.WEBSITES_VISITED, DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)));
 
                 foreach (var kvp in _orderedWebsites)
                 {
-                    _printer.Print($"{kvp.Key} - {kvp.Value} time(s)");
+                    _printer.Print(string.Format(Constants.WEBSITES_VISITED_COUNT, kvp.Key, kvp.Value));
                 }
 
-                _printer.Print($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: Host who generated the most traffic: {_host.Key} - {_host.Value} hits");
+                _printer.Print(string.Format(Constants.HOST_VISITS, DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)));
             }
         }
     }

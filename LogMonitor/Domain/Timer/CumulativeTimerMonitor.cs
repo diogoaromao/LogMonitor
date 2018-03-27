@@ -17,7 +17,7 @@ namespace LogMonitor.Domain.Timer
             {
                 lock (GlobalLocks.WriteLock)
                 {
-                    _printer.Print($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: No websites have been visited");
+                    _printer.Print(string.Format(Constants.NO_WEBSITES_VISITED, DateTime.Now));
                 }
                 return;
             }

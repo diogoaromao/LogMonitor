@@ -18,11 +18,11 @@ namespace LogMonitor.Domain.Notification
         {
             lock (GlobalLocks.WriteLock)
             {
-                _printer.Print($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: Most visited websites since last check:");
+                _printer.Print(string.Format(Constants.RECENT_WEBSITES_VISITED, DateTime.Now));
                 foreach (var site in _mostVisitedSections)
                 {
-                    _printer.Print($"Website: {site.Key}");
-                    _printer.Print("Sections:");
+                    _printer.Print(string.Format(Constants.WEBSITE, site.Key));
+                    _printer.Print(Constants.SECTIONS);
 
                     foreach (var value in site.Value)
                     {

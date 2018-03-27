@@ -23,8 +23,8 @@ namespace LogMonitor.Domain.Notification
         {
             lock (GlobalLocks.WriteLock)
             {
-                _printer.Print($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: High traffic generated an alert - hits = {_hits}, triggered at {_raisedAt}.");
-                _printer.Print($"[{DateTime.Now.ToString(Constants.DATETIME_LOG_FORMAT)}]: Threshold = {_threshold}, Average = {_average} bytes.");
+                _printer.Print(string.Format(Constants.ALERT_TRIGGERED, DateTime.Now, _hits, _raisedAt));
+                _printer.Print(string.Format(Constants.ALERT_AVERAGE, DateTime.Now, _threshold, _average));
             }
         }
 
