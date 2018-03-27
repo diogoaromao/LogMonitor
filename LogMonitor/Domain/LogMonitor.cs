@@ -17,7 +17,7 @@ namespace LogMonitor.Domain
         {
             new PeriodicTimerMonitor(30000, _file);
             new CumulativeTimerMonitor(60000, _file);
-            new AlertTimerMonitor(120000, _file, _threshold);
+            new AlertTimerMonitor(2000, 120000, _file, _threshold);
 
             while (true)
             {

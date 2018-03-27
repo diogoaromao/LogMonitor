@@ -1,4 +1,5 @@
 ﻿using LogMonitor.Utils;
+using System;
 using System.Collections.Generic;
 
 namespace LogMonitor.Domain.Timer
@@ -9,7 +10,7 @@ namespace LogMonitor.Domain.Timer
         protected Dictionary<string, List<string>> _sections;
         protected bool _isCumulative;
 
-        public StatusTimerMonitor(long time, string file, bool isCumulative) : base(time, file)
+        public StatusTimerMonitor(long time, string file, bool isCumulative) : base(time, time, file)
         {
             _pageHits = new Dictionary<string, int>();
             _sections = new Dictionary<string, List<string>>();
@@ -18,6 +19,8 @@ namespace LogMonitor.Domain.Timer
 
         protected override void parseContent(string file)
         {
+            DateTimeOffset dateTime = DateTimeOffset.Now;
+
             if (!_isCumulative)
             {
                 _sections.Clear();
@@ -27,7 +30,7 @@ namespace LogMonitor.Domain.Timer
             var lines = _logParser.ParseContent(file);
             foreach (var line in lines)
             {
-                if (isLineInvalid(line))
+                if (isLineInvalid(line, dateTime))
                     continue;
 
                 _sections.AddOrUpdate(line.Website, new List<string> { line.Section }, (site, sections) =>

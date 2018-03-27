@@ -1,5 +1,6 @@
 ﻿using LogMonitor.Domain.Notification;
 using LogMonitor.Domain.Notification.Interfaces;
+using System;
 using System.Collections.Generic;
 
 namespace LogMonitor.Domain.Timer
@@ -12,7 +13,7 @@ namespace LogMonitor.Domain.Timer
 
         private Queue<INotification> _alerts;
 
-        public AlertTimerMonitor(long time, string file, double threshold) : base(time, file)
+        public AlertTimerMonitor(long runFrequency, long time, string file, double threshold) : base(runFrequency, time, file)
         {
             _threshold = threshold;
             _alerts = new Queue<INotification>();
@@ -20,13 +21,15 @@ namespace LogMonitor.Domain.Timer
 
         protected override void parseContent(string file)
         {
+            DateTimeOffset dateTime = DateTimeOffset.Now;
+
             _sumBytes = _hits = 0;
 
             var lines = _logParser.ParseContent(file);
 
             foreach (var line in lines)
             {
-                if (isLineInvalid(line))
+                if (isLineInvalid(line, dateTime))
                     continue;
 
                 _sumBytes += line.Size;
