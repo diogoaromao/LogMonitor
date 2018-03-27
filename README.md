@@ -12,7 +12,7 @@ Create a simple console program that monitors HTTP traffic on your machine:
 * Explain how you’d improve on this application design
 
 ## Nuget Restore Error ##
-If you get an error related with restoring nuget packages running one of the commands below, please do the following:
+If you get an error related with restoring nuget packages running one of the powershell commands below, please do the following:
 1. Open Solution on Visual Studio
 2. Right-Click on the solution.
 3. Restore NuGet Packages.
